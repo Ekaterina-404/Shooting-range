@@ -43,26 +43,20 @@
   <ItemGroup>
      <Folder Include="Assets" />
      <Folder Include="Assets\CaptainCatSparrow\PBR_Materials\500_Materials\Materials\Floor" />
-     <Folder Include="Assets\Free Low Poly Weapons\Models" />
      <Folder Include="Assets\CaptainCatSparrow\PBR_Materials\500_Materials\Scenes" />
      <Folder Include="Assets\CaptainCatSparrow\PBR_Materials\500_Materials\Textures\Ground" />
      <Folder Include="Assets\CaptainCatSparrow\PBR_Materials\500_Materials\Textures\Panel" />
      <Folder Include="Assets\CaptainCatSparrow\PBR_Materials\500_Materials" />
-     <Folder Include="Assets\Free Low Poly Weapons\Demo Scene" />
      <Folder Include="Assets\CaptainCatSparrow\PBR_Materials\500_Materials\Materials\Cloth" />
      <Folder Include="Assets\CaptainCatSparrow\PBR_Materials\500_Materials\Textures\Walls" />
      <Folder Include="Assets\CaptainCatSparrow\PBR_Materials\500_Materials\Textures\Cloth" />
-     <Folder Include="Assets\Free Low Poly Weapons\Textuers" />
      <Folder Include="Assets\Scenes" />
      <Folder Include="Assets\CaptainCatSparrow\PBR_Materials\500_Materials\Materials\Panel" />
      <Folder Include="Assets\CaptainCatSparrow\PBR_Materials\500_Materials\Materials\Walls" />
-     <Folder Include="Assets\Free Low Poly Weapons\Prefabs" />
      <Folder Include="Assets\CaptainCatSparrow\PBR_Materials\500_Materials\Textures\Floor" />
      <Folder Include="Assets\CaptainCatSparrow" />
      <Folder Include="Assets\CaptainCatSparrow\PBR_Materials\500_Materials\Materials\Wood" />
      <Folder Include="Assets\CaptainCatSparrow\PBR_Materials\500_Materials\Textures" />
-     <Folder Include="Assets\Free Low Poly Weapons" />
-     <Folder Include="Assets\Free Low Poly Weapons\Materials" />
      <Folder Include="Assets\CaptainCatSparrow\PBR_Materials\500_Materials\Textures\Wood" />
      <Folder Include="Assets\CaptainCatSparrow\PBR_Materials" />
      <Folder Include="Assets\CaptainCatSparrow\PBR_Materials\500_Materials\Materials\Ground" />

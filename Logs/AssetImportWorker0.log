@@ -15,7 +15,7 @@ D:/Shooting range
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63334
+65507
 Successfully changed project path to: D:/Shooting range
 D:/Shooting range
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ D:/Shooting range
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [15904] Host "[IP] 10.0.85.2 [Port] 0 [Flags] 2 [Guid] 1755495055 [EditorId] 1755495055 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-P35B5L1) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [21700] Host "[IP] 10.0.85.2 [Port] 0 [Flags] 2 [Guid] 428774572 [EditorId] 428774572 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-P35B5L1) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [15904] Host "[IP] 10.0.85.2 [Port] 0 [Flags] 2 [Guid] 1755495055 [EditorId] 1755495055 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-P35B5L1) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [21700] Host "[IP] 10.0.85.2 [Port] 0 [Flags] 2 [Guid] 428774572 [EditorId] 428774572 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-P35B5L1) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 3.88 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 3.98 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.1f1 (f18e0c1b5784)
 [Subsystems] Discovering subsystems at path D:/2022.3.1f1/Editor/Data/Resources/UnitySubsystems
@@ -69,44 +69,44 @@ Initialize mono
 Mono path[0] = 'D:/2022.3.1f1/Editor/Data/Managed'
 Mono path[1] = 'D:/2022.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/2022.3.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56440
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56828
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/2022.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002093 seconds.
-- Loaded All Assemblies, in  0.229 seconds
+Registered in 0.002715 seconds.
+- Loaded All Assemblies, in  0.259 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
 - Finished resetting the current domain, in  0.214 seconds
-Domain Reload Profiling: 442ms
-	BeginReloadAssembly (59ms)
+Domain Reload Profiling: 473ms
+	BeginReloadAssembly (70ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (25ms)
+	RebuildCommonClasses (27ms)
 	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (38ms)
-	LoadAllAssembliesAndSetupDomain (99ms)
-		LoadAssemblies (58ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (111ms)
+		LoadAssemblies (69ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (97ms)
-			TypeCache.Refresh (96ms)
-				TypeCache.ScanAssembly (87ms)
+		AnalyzeDomain (109ms)
+			TypeCache.Refresh (108ms)
+				TypeCache.ScanAssembly (99ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (214ms)
+	FinalizeReload (215ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (166ms)
+		SetupLoadedEditorAssemblies (165ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (7ms)
 			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (109ms)
-			ProcessInitializeOnLoadMethodAttributes (42ms)
+			ProcessInitializeOnLoadAttributes (107ms)
+			ProcessInitializeOnLoadMethodAttributes (41ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -116,51 +116,51 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image D:\Shooting range\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\Shooting range\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.537 seconds
-Refreshing native plugins compatible for Editor in 1.02 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.611 seconds
+Refreshing native plugins compatible for Editor in 1.00 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.476 seconds
-Domain Reload Profiling: 1013ms
-	BeginReloadAssembly (91ms)
+- Finished resetting the current domain, in  0.541 seconds
+Domain Reload Profiling: 1152ms
+	BeginReloadAssembly (98ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (17ms)
-	RebuildCommonClasses (24ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (28ms)
-	LoadAllAssembliesAndSetupDomain (386ms)
-		LoadAssemblies (189ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (446ms)
+		LoadAssemblies (233ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (241ms)
-			TypeCache.Refresh (226ms)
-				TypeCache.ScanAssembly (212ms)
-			ScanForSourceGeneratedMonoScriptInfo (12ms)
+		AnalyzeDomain (259ms)
+			TypeCache.Refresh (245ms)
+				TypeCache.ScanAssembly (231ms)
+			ScanForSourceGeneratedMonoScriptInfo (11ms)
 			ResolveRequiredComponents (3ms)
-	FinalizeReload (476ms)
+	FinalizeReload (541ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (364ms)
+		SetupLoadedEditorAssemblies (403ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (5ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (67ms)
-			ProcessInitializeOnLoadAttributes (270ms)
-			ProcessInitializeOnLoadMethodAttributes (16ms)
+			BeforeProcessingInitializeOnLoad (73ms)
+			ProcessInitializeOnLoadAttributes (300ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
 			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 1.06 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 1.12 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3122 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 29 unused Assets / (56.4 KB). Loaded Objects now: 3589.
-Memory consumption went from 117.0 MB to 116.9 MB.
-Total: 3.554900 ms (FindLiveObjects: 0.235700 ms CreateObjectMapping: 0.194700 ms MarkObjects: 2.995300 ms  DeleteObjects: 0.128000 ms)
+Memory consumption went from 116.9 MB to 116.9 MB.
+Total: 2.767400 ms (FindLiveObjects: 0.222000 ms CreateObjectMapping: 0.147000 ms MarkObjects: 2.272300 ms  DeleteObjects: 0.125100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -175,172 +175,92 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 4062.160145 seconds.
-  path: Assets/CaptainCatSparrow/PBR_Materials
-  artifactKey: Guid(0f5170d1773bf2b4cb60ebc68222faad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CaptainCatSparrow/PBR_Materials using Guid(0f5170d1773bf2b4cb60ebc68222faad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfc6e213f68842251ca8d811ccb127bb') in 0.002770 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 3.818272 seconds.
-  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Cloth/Cloth_1_Albedo.png
-  artifactKey: Guid(e4a96067f344454488ca98723c4a77e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Cloth/Cloth_1_Albedo.png using Guid(e4a96067f344454488ca98723c4a77e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91ccf3db1c41b09dbb77a1d32e32b5c3') in 0.043763 seconds
+  Time since last request: 10866.034366 seconds.
+  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Panel/Panel_2_Normal.png
+  artifactKey: Guid(ca09ae2f9218c8347aea524c89852c5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Panel/Panel_2_Normal.png using Guid(ca09ae2f9218c8347aea524c89852c5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bcd424379d8c889f4644b53f3e133be') in 0.079865 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.006138 seconds.
-  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Cloth/Cloth_1_Occlusion.png
-  artifactKey: Guid(8544c63c7de50384a8ee862964e8c826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Cloth/Cloth_1_Occlusion.png using Guid(8544c63c7de50384a8ee862964e8c826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8dab0530dae557d0ab2934ac72be94f') in 0.012256 seconds
+  Time since last request: 20.158669 seconds.
+  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Materials/Panel/mPanel_2.mat
+  artifactKey: Guid(f9be59f175831094c874b94e8ae33337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Materials/Panel/mPanel_2.mat using Guid(f9be59f175831094c874b94e8ae33337) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69704565ee7432868a23f526b3f65bc6') in 0.078076 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 1.601394 seconds.
+  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Materials/Walls/mWall_2.mat
+  artifactKey: Guid(d828d965dd3389d4baf10b61c8029800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Materials/Walls/mWall_2.mat using Guid(d828d965dd3389d4baf10b61c8029800) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9eb720813140d08af894687bf8b933c') in 0.040191 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Materials/Walls/mWall_5.mat
+  artifactKey: Guid(21209381cf6024348a96a2b9d8c5d48a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Materials/Walls/mWall_5.mat using Guid(21209381cf6024348a96a2b9d8c5d48a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3540057fdb310335f0a2469a4bdf4a65') in 0.029182 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Materials/Walls/mWall_4.mat
+  artifactKey: Guid(4ba436b99e17b6e4fa83ff923eb032f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Materials/Walls/mWall_4.mat using Guid(4ba436b99e17b6e4fa83ff923eb032f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8472db79d5e89b28a6bc2f9d2bb4e1c') in 0.033435 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 2.771654 seconds.
+  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Materials/Floor/mFloor_2.mat
+  artifactKey: Guid(dea1d7c10d5aec9438808e4e23d35e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Materials/Floor/mFloor_2.mat using Guid(dea1d7c10d5aec9438808e4e23d35e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '992fcf526254a4c2fc955c2c101b285b') in 0.033085 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Materials/Floor/mFloor_4.mat
+  artifactKey: Guid(8869447ca8e873a4086c377abf251576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Materials/Floor/mFloor_4.mat using Guid(8869447ca8e873a4086c377abf251576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a08014d0b4d1d570401094e11491d8d1') in 0.031636 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.539251 seconds.
+  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Materials/Ground/mGround_2.mat
+  artifactKey: Guid(e0f91876e570b8d459fee1adf7b7d29a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Materials/Ground/mGround_2.mat using Guid(e0f91876e570b8d459fee1adf7b7d29a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '769749cdcbcc5dbd03fca0b24078657f') in 0.034513 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
 ========================================================================
 Received Import Request.
   Time since last request: 0.000014 seconds.
-  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Cloth/Cloth_2_Albedo.png
-  artifactKey: Guid(21401c4c857bf6b4cb7bd8aac4f3a914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Cloth/Cloth_2_Albedo.png using Guid(21401c4c857bf6b4cb7bd8aac4f3a914) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '660492fd1c5066ce5f3d9cb7ace5097c') in 0.009727 seconds
+  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Materials/Ground/mGround_6.mat
+  artifactKey: Guid(8e6879f7b2165944fa851e96e5c5877e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Materials/Ground/mGround_6.mat using Guid(8e6879f7b2165944fa851e96e5c5877e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6754cbcc981688bb43cf6234d363c87') in 0.032322 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 6
 ========================================================================
 Received Import Request.
-  Time since last request: 0.566267 seconds.
-  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Floor/Floor_1_Albedo.png
-  artifactKey: Guid(04bb744f999e5f748aa2028a9a2e3a39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Floor/Floor_1_Albedo.png using Guid(04bb744f999e5f748aa2028a9a2e3a39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5de75793f81aec20962b62d27c09b9e5') in 0.006705 seconds
+  Time since last request: 1.688223 seconds.
+  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Materials/Floor/mFloor_10.mat
+  artifactKey: Guid(01a6717046987e34aae97b1a7292e32e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Materials/Floor/mFloor_10.mat using Guid(01a6717046987e34aae97b1a7292e32e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfef0f741819d0322a3a2f3fb8650626') in 0.026020 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 6
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Floor/Floor_1_Metallic.png
-  artifactKey: Guid(d947223af3eba2649973c59b931169df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Floor/Floor_1_Metallic.png using Guid(d947223af3eba2649973c59b931169df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f82c6a4791e7bab46cdbca6752b1da3b') in 0.017122 seconds
+  Time since last request: 28.296117 seconds.
+  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Materials/Cloth/mCloth_3.mat
+  artifactKey: Guid(42765f0df33b0cd48826e4bf5105b3c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Materials/Cloth/mCloth_3.mat using Guid(42765f0df33b0cd48826e4bf5105b3c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17596544bd720a059230efb6355f00c2') in 0.034875 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Floor/Floor_1_Occlusion.png
-  artifactKey: Guid(b8f4b729803603f44a7770ab77744c36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Floor/Floor_1_Occlusion.png using Guid(b8f4b729803603f44a7770ab77744c36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f6e8ef63353e89f7bba33178f61c8b4') in 0.006912 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.390471 seconds.
-  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Ground/Ground_1_Albedo.png
-  artifactKey: Guid(9257222ec8289b24e896c19daa1e9881) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Ground/Ground_1_Albedo.png using Guid(9257222ec8289b24e896c19daa1e9881) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2db0916248c286f37e69b8a54da5407') in 0.007611 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Ground/Ground_1_Occlusion.png
-  artifactKey: Guid(57a3d58363b99e94799fdbee9fbdc7dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Ground/Ground_1_Occlusion.png using Guid(57a3d58363b99e94799fdbee9fbdc7dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea10898b981f4b802e5585f54af8441b') in 0.008582 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Ground/Ground_2_Albedo.png
-  artifactKey: Guid(7733c990ef86f5442a46a71ea2aec3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Ground/Ground_2_Albedo.png using Guid(7733c990ef86f5442a46a71ea2aec3c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bd2ded42fda809aebdab6920072d9f8') in 0.008151 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.407288 seconds.
-  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Panel/Panel_1_Albedo.png
-  artifactKey: Guid(a5661d8517db62d47929b5305597ae9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Panel/Panel_1_Albedo.png using Guid(a5661d8517db62d47929b5305597ae9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bebd4595a5b0f7a8a92d8d274cd20d7') in 0.007457 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Panel/Panel_1_Occlusion.png
-  artifactKey: Guid(7ce8be494afe54041b5ef4c39b2adf17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Panel/Panel_1_Occlusion.png using Guid(7ce8be494afe54041b5ef4c39b2adf17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03389e1d9193e53f26fee5b1095f06dc') in 0.006744 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Panel/Panel_2_Albedo.png
-  artifactKey: Guid(16e00d1f068c2c44a86edfe13387c761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Panel/Panel_2_Albedo.png using Guid(16e00d1f068c2c44a86edfe13387c761) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26b7f7a15246f292a6b92a3910feeffd') in 0.006404 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.644575 seconds.
-  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Walls/Wall_1_Albedo.png
-  artifactKey: Guid(3fe4df6159ea3074a98b208bcd27eaf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Walls/Wall_1_Albedo.png using Guid(3fe4df6159ea3074a98b208bcd27eaf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dea3159d8e94167fc9898342dcaabc72') in 0.007076 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Walls/Wall_1_Occlusion.png
-  artifactKey: Guid(f93e7f0b2430ef54899218bed18dbd11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Walls/Wall_1_Occlusion.png using Guid(f93e7f0b2430ef54899218bed18dbd11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bff72291d41f3b50aa3c9c626cdeb125') in 0.006631 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000069 seconds.
-  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Walls/Wall_1_Normal.png
-  artifactKey: Guid(46073f8cd690e724bbd3816a7f0dd1bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Walls/Wall_1_Normal.png using Guid(46073f8cd690e724bbd3816a7f0dd1bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a64e3c31561522a0ccb51be1641e5177') in 0.030430 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.589656 seconds.
-  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Wood/Wood_1_Height.png
-  artifactKey: Guid(efced21eedb5e304a9d04a89f4cbb7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Wood/Wood_1_Height.png using Guid(efced21eedb5e304a9d04a89f4cbb7c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '092bf5313deef3e518f17bdcca51accf') in 0.010694 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Wood/Wood_2_Albedo.png
-  artifactKey: Guid(b0423b9d2f1a995448cd607f2e4b307f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Wood/Wood_2_Albedo.png using Guid(b0423b9d2f1a995448cd607f2e4b307f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a21ea5fec929a350cdfeda29f90269b') in 0.007418 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Wood/Wood_1_Occlusion.png
-  artifactKey: Guid(db382976cf0d9b8489beb53e8c481c76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CaptainCatSparrow/PBR_Materials/500_Materials/Textures/Wood/Wood_1_Occlusion.png using Guid(db382976cf0d9b8489beb53e8c481c76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '321fc11ba583f4e0db7c02f652bf9c01') in 0.005409 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 3.170691 seconds.
-  path: Assets/Free Low Poly Weapons/Materials/Glass.mat
-  artifactKey: Guid(2c6bfc6a08dde84419c015e5ad8313cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Low Poly Weapons/Materials/Glass.mat using Guid(2c6bfc6a08dde84419c015e5ad8313cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '137bdc27a6f328020e09c6c6a4aefbfb') in 0.046679 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.580556 seconds.
-  path: Assets/Free Low Poly Weapons/Models/Gun_1.fbx
-  artifactKey: Guid(9680ad98933bec64f988e5fdc59b98f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Free Low Poly Weapons/Models/Gun_1.fbx using Guid(9680ad98933bec64f988e5fdc59b98f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5652683e2167b6f521fd3d3d766e38fc') in 0.060028 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 27
+Number of asset objects unloaded after import = 6
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: ќпераци€ ввода/вывода была прервана из-за завершени€ потока команд или по запросу приложени€.
 AssetImportWorker is now disconnected from the server
