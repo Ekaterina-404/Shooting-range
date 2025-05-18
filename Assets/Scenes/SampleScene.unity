@@ -1333,6 +1333,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 3
   _impulse: 300
+  _velocityScaler: 3
+  _velocity: 5
 --- !u!1 &2038288386
 GameObject:
   m_ObjectHideFlags: 0
