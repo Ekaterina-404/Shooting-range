@@ -9,43 +9,41 @@ using UnityEngine;
 public class SphereControl : MonoBehaviour
 {
     private Rigidbody _rigitbodySphere;
-    public float _speed = 5f;
-    public int _impulse = 300;
-    public float _velocityScaler;
-    public float _velocity;
-    private Vector3 _mousePosition;
+    private Transform _transformSphere;
+    private readonly float _distance = 5f;
 
     private void Start() //Awake
     {
         _rigitbodySphere = GetComponent<Rigidbody>();
+        _transformSphere = GetComponent<Transform>();
+        _rigitbodySphere.useGravity = false;
     }
 
     private void Update()
     {
-        Vector3 _mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 5f);
-        Vector3 objPosition = Camera.main.ScreenToWorldPoint(_mousePosition);
-        //определить позицию мыши в текущем кадре в мировых координатах (метод ScreenToWorldPoint класса камера)
-        //Vector3 direction = objPosition - transform.position;
-        //direction.Normalize(); //найти вектор, исходящий из центра сферы, и направленный к позиции мыши
-        //transform.position = objPosition;
-        _velocity = Vector3.Distance(transform.position, _mousePosition) * _velocityScaler;
-
-        if (Input.GetMouseButton(0))
+        if (_rigitbodySphere.useGravity == false)
         {
-            Vector3 direction = (_mousePosition - _rigitbodySphere.transform.position);
-            direction.Normalize();
-            _rigitbodySphere.velocity = direction * _velocity;
-            var vx = _rigitbodySphere.velocity * direction.x;
-            var vy = _rigitbodySphere.velocity * direction.y;
-            var vz = _rigitbodySphere.velocity * direction.z;
+            FixItToMouse();
+        }
 
-            //if (Input.GetMouseButton(0))
-            //{
-                //if (Input.GetKey(KeyCode.A))
-                //{
-                    //_rigitbodySphere.AddForce(0f, 0f, 5f);
-                //}
-            //}
+        if (Input.GetMouseButtonUp(0)) //усиливается бросок, зависимость силы от времени, GetMouseButton
+        {
+            _rigitbodySphere.useGravity = true;
+
+            _rigitbodySphere.AddForce(Camera.main.transform.forward * 3000);
         }
     }
+
+    private void FixItToMouse() //Цепляем объект к курсору мыши
+    {
+        Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, _distance);
+        Vector3 mousePositionInTheWorld = Camera.main.ScreenToWorldPoint(mousePosition);
+        _transformSphere.position = mousePositionInTheWorld;
+    }
+    
+
+    /*private void FixedUpdate()
+    {
+
+    } */
 }
