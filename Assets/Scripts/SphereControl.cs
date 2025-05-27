@@ -11,6 +11,7 @@ public class SphereControl : MonoBehaviour
     private Rigidbody _rigitbodySphere;
     private Transform _transformSphere;
     private readonly float _distance = 5f;
+    [SerializeField] private GameObject _sphere;
 
     private void Start() //Awake
     {
@@ -31,6 +32,7 @@ public class SphereControl : MonoBehaviour
             _rigitbodySphere.useGravity = true;
 
             _rigitbodySphere.AddForce(Camera.main.transform.forward * 3000);
+            Instantiate(_sphere, new Vector3(Input.mousePosition.x, Input.mousePosition.y, _distance), Quaternion.identity);
         }
     }
 
