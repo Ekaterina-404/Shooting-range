@@ -12,6 +12,7 @@ public class SphereControl : MonoBehaviour
     private Transform _transformSphere;
     private readonly float _distance = 5f;
     [SerializeField] private GameObject _sphere;
+    //private GameObject _sphereClone;
 
     private void Start() //Awake
     {
@@ -30,7 +31,6 @@ public class SphereControl : MonoBehaviour
         if (Input.GetMouseButtonUp(0)) //усиливается бросок, зависимость силы от времени, GetMouseButton
         {
             _rigitbodySphere.useGravity = true;
-
             _rigitbodySphere.AddForce(Camera.main.transform.forward * 3000);
             Instantiate(_sphere, new Vector3(Input.mousePosition.x, Input.mousePosition.y, _distance), Quaternion.identity);
         }
@@ -42,7 +42,15 @@ public class SphereControl : MonoBehaviour
         Vector3 mousePositionInTheWorld = Camera.main.ScreenToWorldPoint(mousePosition);
         _transformSphere.position = mousePositionInTheWorld;
     }
-    
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject
+            .CompareTag("Respawn")) //где тег, который присвоен объекту который соприкасается с объектом на котором висит данный скрипт
+        {
+            Destroy(this.gameObject);
+        }
+    }
 
     /*private void FixedUpdate()
     {
