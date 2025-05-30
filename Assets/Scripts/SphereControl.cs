@@ -11,7 +11,8 @@ public class SphereControl : MonoBehaviour
     private Rigidbody _rigitbodySphere;
     private Transform _transformSphere;
     private readonly float _distance = 5f;
-    [SerializeField] private GameObject _sphere;
+    [SerializeField] private GameObject _sphereMain;
+    private GameObject _sphereClone;
 
     private void Start() //Awake
     {
@@ -27,12 +28,14 @@ public class SphereControl : MonoBehaviour
             FixItToMouse();
         }
 
-        if (Input.GetMouseButtonUp(0)) //усиливается бросок, зависимость силы от времени, GetMouseButton
+        if (Input.GetMouseButtonUp(0))
         {
-            _rigitbodySphere.useGravity = true;
-
-            _rigitbodySphere.AddForce(Camera.main.transform.forward * 3000);
-            Instantiate(_sphere, new Vector3(Input.mousePosition.x, Input.mousePosition.y, _distance), Quaternion.identity);
+            if (!gameObject.CompareTag("Player"))
+            {
+                _rigitbodySphere.useGravity = true;
+                _rigitbodySphere.AddForce(Camera.main.transform.forward * 3000);
+                _sphereClone = Instantiate(_sphereMain, new Vector3(Input.mousePosition.x, Input.mousePosition.y, _distance), Quaternion.identity);
+            }
         }
     }
 
@@ -42,10 +45,12 @@ public class SphereControl : MonoBehaviour
         Vector3 mousePositionInTheWorld = Camera.main.ScreenToWorldPoint(mousePosition);
         _transformSphere.position = mousePositionInTheWorld;
     }
-    
-
-    /*private void FixedUpdate()
+    /*private void OnCollisionEnter(Collision collision)
     {
-
-    } */
+        if (!collision.gameObject
+            .CompareTag("Player")) //где тег, который присвоен объекту который соприкасается с объектом на котором висит данный скрипт
+        {
+            Destroy(this.gameObject);
+        }
+    }*/
 }
