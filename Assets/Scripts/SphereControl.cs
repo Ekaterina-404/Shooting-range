@@ -12,6 +12,19 @@ public class SphereControl : MonoBehaviour
     private Transform _transformSphere;
     private readonly float _distance = 5f;
     [SerializeField] private GameObject _sphere;
+    //[SerializeField] private GameObject _spherePref;
+    [SerializeField] private Material _material;
+    [SerializeField] private Quaternion _rotation = Quaternion.Euler(0,0,0);
+    [SerializeField] private Vector3 _position;
+
+    private void CreateSphere ()
+    {
+        GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+        sphere.GetComponent<Renderer>().material = _material;
+        sphere.transform.position = _transformSphere.position;
+        sphere.transform.rotation = _rotation;
+
+    }
 
     private void Start() //Awake
     {
@@ -32,7 +45,7 @@ public class SphereControl : MonoBehaviour
             _rigitbodySphere.useGravity = true;
 
             _rigitbodySphere.AddForce(Camera.main.transform.forward * 3000);
-            Instantiate(_sphere, new Vector3(Input.mousePosition.x, Input.mousePosition.y, _distance), Quaternion.identity);
+            CreateSphere();
         }
     }
 
