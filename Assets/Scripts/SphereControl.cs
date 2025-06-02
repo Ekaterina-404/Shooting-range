@@ -21,7 +21,7 @@ public class SphereControl : MonoBehaviour
     {
         GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
         sphere.GetComponent<Renderer>().material = _material;
-        sphere.transform.position = _transformSphere.position;
+        sphere.transform.position = _transformSphere.position;//позиция мыши
         sphere.transform.rotation = _rotation;
 
     }
@@ -37,7 +37,7 @@ public class SphereControl : MonoBehaviour
     {
         if (_rigitbodySphere.useGravity == false)
         {
-            FixItToMouse();
+            FixItToMouse(_transformSphere);
         }
 
         if (Input.GetMouseButtonUp(0)) //усиливается бросок, зависимость силы от времени, GetMouseButton
@@ -49,16 +49,12 @@ public class SphereControl : MonoBehaviour
         }
     }
 
-    private void FixItToMouse() //Цепляем объект к курсору мыши
+    private void FixItToMouse(Transform transformSphere) //Цепляем объект к курсору мыши
     {
         Vector3 mousePosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, _distance);
         Vector3 mousePositionInTheWorld = Camera.main.ScreenToWorldPoint(mousePosition);
-        _transformSphere.position = mousePositionInTheWorld;
+        transformSphere.position = mousePositionInTheWorld;
     }
     
-
-    /*private void FixedUpdate()
-    {
-
-    } */
+   //private void FixedUpdate()
 }
