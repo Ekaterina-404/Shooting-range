@@ -52,4 +52,11 @@ public class SphereControl : MonoBehaviour
         Vector3 mousePositionInTheWorld = Camera.main.ScreenToWorldPoint(mousePosition);
         transformSphere.position = mousePositionInTheWorld;
     }
+    private void OnCollisionEnter(Collision cube) 
+    {
+        if (cube.gameObject.CompareTag("Respawn"))
+        {
+            
+        } 
+    }
 }
