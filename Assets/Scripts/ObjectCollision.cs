@@ -1,18 +1,20 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjectCollision : MonoBehaviour
+namespace ShootingRange
 {
-    private GameObject _objectToRemove;
-    private void OnCollisionEnter(Collision collision)     // Выполняется при столкновении объекта с другим объектом 
+    public class ObjectCollision : MonoBehaviour
     {
-        if (collision.gameObject.CompareTag("Respawn")) //другой объект
-        // Проверяем, столкнулся ли наш объект с определенным объектом
-        //if (cube.gameObject == _objectToRemove)
+        private GameObject _objectToRemove;
+
+        private void OnCollisionEnter(Collision collision) // Выполняется при столкновении объекта с другим объектом 
         {
-            // Удаляем объект из сцены
-            Destroy(gameObject);
+            if (collision.gameObject.CompareTag("Respawn")) //другой объект
+                // Проверяем, столкнулся ли наш объект с определенным объектом
+                //if (cube.gameObject == _objectToRemove)
+            {
+                // Удаляем объект из сцены
+                Destroy(gameObject);
+            }
         }
     }
 }
