@@ -5,9 +5,9 @@ using UnityEngine;
 public class ObjectCollision : MonoBehaviour
 {
     private GameObject _objectToRemove;
-    private void OnCollisionEnter(Collision cube)     // Выполняется при столкновении объекта с другим объектом
+    private void OnCollisionEnter(Collision collision)     // Выполняется при столкновении объекта с другим объектом 
     {
-        if (cube.gameObject.CompareTag("Respawn"))
+        if (collision.gameObject.CompareTag("Respawn")) //другой объект
         // Проверяем, столкнулся ли наш объект с определенным объектом
         //if (cube.gameObject == _objectToRemove)
         {
