@@ -8,17 +8,11 @@ namespace ShootingRange
         [SerializeField] private Rigidbody _rigidbody;
         [SerializeField] private Material _material;
         [SerializeField] private Vector3 _scale;
-
-        private void OnCollisionEnter(Collision cube)
-        {
-            if (cube.gameObject.CompareTag("Respawn"))
-            {
-            }
-        }
-
+        
         public void Fire(Vector3 direction)
         {
             _rigidbody.AddForce(direction);
+            Destroy(gameObject, 5f);
         }
 
         public void SetGravity(bool gravityEnabled)

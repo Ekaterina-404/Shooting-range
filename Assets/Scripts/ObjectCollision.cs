@@ -8,11 +8,8 @@ namespace ShootingRange
 
         private void OnCollisionEnter(Collision collision) // Выполняется при столкновении объекта с другим объектом 
         {
-            if (collision.gameObject.CompareTag("Respawn")) //другой объект
-                // Проверяем, столкнулся ли наш объект с определенным объектом
-                //if (cube.gameObject == _objectToRemove)
+            if (collision.gameObject.CompareTag("Respawn")) // Проверка, столкновения этого объект с определенным объектом
             {
-                // Удаляем объект из сцены
                 Destroy(gameObject);
             }
         }
