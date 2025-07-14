@@ -13,6 +13,7 @@ namespace ShootingRange
         [SerializeField] private Bullet _bulletPrefab;
 
         private Bullet _currentBullet;
+        //private Renderer _rendererBullet;
         private Vector3 _direction;
         private Camera _camera;
 
