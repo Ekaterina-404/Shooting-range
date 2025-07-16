@@ -17,5 +17,6 @@ namespace ShootingRange
             var rendererSphere = GetComponent<Renderer>();
             rendererSphere.material = _materials[Random.Range(0, _materials.Length)];
         }
+        
     }
 }
