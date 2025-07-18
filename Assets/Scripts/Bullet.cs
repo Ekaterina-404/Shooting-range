@@ -6,9 +6,8 @@ namespace ShootingRange
     {
         [SerializeField] private Transform _transform;
         [SerializeField] private Rigidbody _rigidbody;
-        //[SerializeField] private Material _material;
         [SerializeField] private Vector3 _scale;
-        
+
         public void Fire(Vector3 direction)
         {
             _rigidbody.AddForce(direction);
