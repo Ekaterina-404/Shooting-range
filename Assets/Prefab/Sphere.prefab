@@ -65,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c4f5b5fe4dd970a418b1187690e3d631, type: 2}
+  - {fileID: 2100000, guid: a8bafeb9ce249ad449cd43f428bf7668, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -150,6 +150,7 @@ MonoBehaviour:
   _transform: {fileID: 8707684767703024485}
   _rigidbody: {fileID: 7118208356907239622}
   _scale: {x: 0.67, y: 0.67, z: 0.67}
+  _meshRenderer: {fileID: 1615127972897943574}
 --- !u!96 &489584303866175498
 TrailRenderer:
   serializedVersion: 3

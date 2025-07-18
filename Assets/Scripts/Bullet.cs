@@ -7,6 +7,7 @@ namespace ShootingRange
         [SerializeField] private Transform _transform;
         [SerializeField] private Rigidbody _rigidbody;
         [SerializeField] private Vector3 _scale;
+        [SerializeField] private MeshRenderer _meshRenderer;
 
         public void Fire(Vector3 direction)
         {
@@ -22,6 +23,11 @@ namespace ShootingRange
         public void SetPosition(Vector3 targetPosition)
         {
             transform.position = targetPosition;
+        }
+
+        public void SetMaterial(Material material)
+        {
+            _meshRenderer.material = material;
         }
     }
 }

@@ -11,12 +11,12 @@ namespace ShootingRange
 
         [Header("References")]
         [SerializeField] private Bullet _bulletPrefab;
-        [SerializeField] private Material[] _materials;
+        [SerializeField] private ColorProvider _colorProvider;
+        private Camera _camera;
 
         private Bullet _currentBullet;
         //private Renderer _rendererBullet;
         private Vector3 _direction;
-        private Camera _camera;
         private Renderer _renderer;
 
         private void Start()
@@ -44,13 +44,13 @@ namespace ShootingRange
         {
             _currentBullet = Instantiate(_bulletPrefab);
             _currentBullet.SetGravity(false);
-            SelectRandomMaterial();
-
+            SetRandomMaterial(_currentBullet);
         }
-        private void SelectRandomMaterial()
+
+        private void SetRandomMaterial(Bullet bullet)
         {
-            _renderer = _bulletPrefab.GetComponent<Renderer>();
-            _renderer.material = _materials[Random.Range(0, _materials.Length)];
+            var material = _colorProvider.GetRandomMaterial();
+            bullet.SetMaterial(material);
         }
 
         private void FixItToMouse(Bullet bullet)
