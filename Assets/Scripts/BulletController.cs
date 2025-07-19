@@ -15,9 +15,7 @@ namespace ShootingRange
         private Camera _camera;
 
         private Bullet _currentBullet;
-        //private Renderer _rendererBullet;
         private Vector3 _direction;
-        private Renderer _renderer;
 
         private void Start()
         {
@@ -35,6 +33,7 @@ namespace ShootingRange
             if (Input.GetMouseButtonUp(0))
             {
                 _currentBullet.SetGravity(true);
+                _currentBullet.SetTrail(true);
                 _currentBullet.Fire(_direction);
                 CreateSphere();
             }

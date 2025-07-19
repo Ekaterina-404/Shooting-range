@@ -8,6 +8,7 @@ namespace ShootingRange
         [SerializeField] private Rigidbody _rigidbody;
         [SerializeField] private Vector3 _scale;
         [SerializeField] private MeshRenderer _meshRenderer;
+        [SerializeField] private TrailRenderer _trailRenderer;
 
         public void Fire(Vector3 direction)
         {
@@ -18,6 +19,11 @@ namespace ShootingRange
         public void SetGravity(bool gravityEnabled)
         {
             _rigidbody.useGravity = gravityEnabled;
+        }
+
+        public void SetTrail(bool trailEnabled)
+        {
+            _trailRenderer.enabled = trailEnabled;
         }
 
         public void SetPosition(Vector3 targetPosition)
