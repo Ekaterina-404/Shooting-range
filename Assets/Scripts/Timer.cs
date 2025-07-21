@@ -19,6 +19,7 @@ namespace ShootingRange
 
         public void StartTimer()
         {
+            StopTimer();
             _isActive = true;
         }
 
