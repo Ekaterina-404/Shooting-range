@@ -1,39 +1,32 @@
-using TMPro;
 using UnityEngine;
 
 namespace ShootingRange
 {
     public class Timer : MonoBehaviour
-
     {
-        [SerializeField] private bool _start;
-        [SerializeField] private TextMeshProUGUI _timer;
+        [SerializeField] private TimerView _timerView;
+        private bool _isActive;
         private float _time;
 
         private void Update()
         {
-            if (_start == true)
+            if (_isActive)
             {
                 _time += Time.deltaTime;
-                _timer.text = _time.ToString("0.00");
+                _timerView.SetTime(_time);
             }
         }
 
         public void StartTimer()
         {
-            _start = true;
-        }
-
-        public void PauseTimer()
-        {
-            _start = false;
+            _isActive = true;
         }
 
         public void StopTimer()
         {
-            _start = false;
+            _isActive = false;
             _time = 0;
-            _timer.text = _time.ToString("0.00");
+            _timerView.SetTime(_time);
         }
     }
 }
