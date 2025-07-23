@@ -58,5 +58,6 @@ namespace ShootingRange
             var mousePositionInTheWorld = _camera.ScreenToWorldPoint(mousePosition);
             bullet.SetPosition(mousePositionInTheWorld);
         }
+        
     }
 }

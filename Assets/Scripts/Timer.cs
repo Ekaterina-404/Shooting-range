@@ -26,7 +26,6 @@ namespace ShootingRange
         public void StopTimer()
         {
             _isActive = false;
-            _time = 0;
             _timerView.SetTime(_time);
         }
     }
