@@ -10,6 +10,19 @@ namespace ShootingRange
         [SerializeField] private MeshRenderer _meshRenderer;
         [SerializeField] private TrailRenderer _trailRenderer;
 
+        [SerializeField] private ParticleSystem _particleSystem;
+
+        private bool _canPlayParticles = true;
+
+        private void OnCollisionEnter(Collision collision)
+        {
+            if (collision.gameObject.tag == "Target" && _canPlayParticles)
+            {
+                _particleSystem.Play();
+                _canPlayParticles = false;
+            }
+        }
+
         public void Fire(Vector3 direction)
         {
             _rigidbody.AddForce(direction);
