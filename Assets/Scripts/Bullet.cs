@@ -21,6 +21,11 @@ namespace ShootingRange
                 _particleSystem.Play();
                 _canPlayParticles = false;
             }
+
+            if (collision.gameObject.tag == "Respawn")
+            {
+                Destroy(gameObject);
+            }
         }
 
         public void Fire(Vector3 direction)
