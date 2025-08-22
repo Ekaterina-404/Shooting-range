@@ -5,9 +5,11 @@ namespace ShootingRange
 {
     public class BulletController : MonoBehaviour
     {
+        [SerializeField] private GameObject _gameOverUI;
+
         [Header("Values")]
         [SerializeField] private float _force = 3000f;
-        [SerializeField] private float _distance = 5f;
+        [SerializeField] private float _distance = 6f;
 
         [Header("References")]
         [SerializeField] private Bullet _bulletPrefab;
@@ -22,20 +24,22 @@ namespace ShootingRange
             _camera = Camera.main;
             Assert.IsNotNull(_camera);
             _direction = _camera.transform.forward * _force;
-
             CreateSphere();
         }
 
         private void Update()
         {
-            FixItToMouse(_currentBullet);
-
-            if (Input.GetMouseButtonUp(0))
+            if (!_gameOverUI.activeInHierarchy)
             {
-                _currentBullet.SetGravity(true);
-                _currentBullet.SetTrail(true);
-                _currentBullet.Fire(_direction);
-                CreateSphere();
+                FixItToMouse(_currentBullet);
+
+                if (Input.GetMouseButtonUp(0))
+                {
+                    _currentBullet.SetGravity(true);
+                    _currentBullet.SetTrail(true);
+                    _currentBullet.Fire(_direction);
+                    CreateSphere();
+                }
             }
         }
 
@@ -58,6 +62,5 @@ namespace ShootingRange
             var mousePositionInTheWorld = _camera.ScreenToWorldPoint(mousePosition);
             bullet.SetPosition(mousePositionInTheWorld);
         }
-        
     }
 }
