@@ -29,7 +29,7 @@ namespace ShootingRange
         }
 
         public void Fire(Vector3 direction)
-        {
+        { 
             _rigidbody.AddForce(direction);
             Destroy(gameObject, 5f);
         }
