@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 using UnityEngine;
 
 namespace ShootingRange
@@ -9,6 +11,13 @@ namespace ShootingRange
         private void Start()
         {
             _timer.StartTimer();
+            //StartCoroutine("WaitAndStart");
         }
+
+        /*IEnumerable<WaitForSeconds> WaitAndStart()
+        {
+            yield return new WaitForSeconds(1.33f);
+        }
+        */
     }
 }
