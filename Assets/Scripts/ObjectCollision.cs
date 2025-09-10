@@ -14,10 +14,13 @@ namespace ShootingRange
                 Destroy(gameObject);
             }
 
-            //if (collision.gameObject.CompareTag("Environment")) 
-            //{
-               // _timer.StartTimer();
-            //}
+            /*if (collision.gameObject.CompareTag("Environment")) 
+            {
+                var cube = GameObject.Find("Target");
+                
+                Destroy(cube);
+            }
+            */
         }
     }
 }
