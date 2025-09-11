@@ -6,6 +6,8 @@ namespace ShootingRange
     {
         [SerializeField] private GameFinishTrigger _gameFinishTrigger;
 
+        private Rigidbody _rigidbodyCube;
+
         private void OnCollisionEnter(Collision collision) // Выполняется при столкновении объекта с другим объектом 
         {
             if (collision.gameObject.CompareTag("Respawn")) // Проверка, столкновения этого объект с определенным объектом
@@ -14,13 +16,11 @@ namespace ShootingRange
                 Destroy(gameObject);
             }
 
-            /*if (collision.gameObject.CompareTag("Environment")) 
+            if (collision.gameObject.CompareTag("bullet"))
             {
-                var cube = GameObject.Find("Target");
-                
-                Destroy(cube);
+                _rigidbodyCube = GetComponent<Rigidbody>();
+                _rigidbodyCube.mass = 1;
             }
-            */
         }
     }
 }

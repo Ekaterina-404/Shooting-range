@@ -150,13 +150,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _transform: {fileID: 8707684767703024485}
-  _transformEffectFalling: {fileID: 0}
   _rigidbody: {fileID: 7118208356907239622}
   _scale: {x: 0.67, y: 0.67, z: 0.67}
   _meshRenderer: {fileID: 1615127972897943574}
   _trailRenderer: {fileID: 489584303866175498}
-  _particleSystem: {fileID: 2948677222578490466}
-  _effectFalling: {fileID: 0}
+  _piecesEffect: {fileID: 2948677222578490466}
 --- !u!96 &489584303866175498
 TrailRenderer:
   serializedVersion: 3
@@ -282,7 +280,7 @@ GameObject:
   - component: {fileID: 2948677222578490466}
   - component: {fileID: 2348502847034345455}
   m_Layer: 0
-  m_Name: ParticleSystem
+  m_Name: ' Pieces'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

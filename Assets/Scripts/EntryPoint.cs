@@ -11,13 +11,6 @@ namespace ShootingRange
         private void Start()
         {
             _timer.StartTimer();
-            //StartCoroutine("WaitAndStart");
         }
-
-        /*IEnumerable<WaitForSeconds> WaitAndStart()
-        {
-            yield return new WaitForSeconds(1.33f);
-        }
-        */
     }
 }

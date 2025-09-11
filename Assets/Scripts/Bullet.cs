@@ -10,7 +10,7 @@ namespace ShootingRange
         [SerializeField] private MeshRenderer _meshRenderer;
         [SerializeField] private TrailRenderer _trailRenderer;
 
-        [SerializeField] private ParticleSystem _particleSystem;
+        [SerializeField] private ParticleSystem _piecesEffect;
 
         private bool _canPlayParticles = true;
 
@@ -18,7 +18,7 @@ namespace ShootingRange
         {
             if (collision.gameObject.tag == "Target" && _canPlayParticles)
             {
-                _particleSystem.Play();
+                _piecesEffect.Play();
                 _canPlayParticles = false;
             }
 
