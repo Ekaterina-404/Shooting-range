@@ -37,6 +37,7 @@ namespace ShootingRange
                 {
                     _currentBullet.SetGravity(true);
                     _currentBullet.SetTrail(true);
+                    _currentBullet.SetRotation(true);
                     _currentBullet.Fire(_direction);
                     CreateSphere();
                 }
