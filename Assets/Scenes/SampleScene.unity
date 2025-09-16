@@ -5100,7 +5100,6 @@ MonoBehaviour:
   - {fileID: 2100000, guid: ce3f0d46186f9384ab5a022a44a4082e, type: 2}
   - {fileID: 2100000, guid: 1eb9b6c65f4726346a9f918c3a07eab8, type: 2}
   - {fileID: 2100000, guid: c4f5b5fe4dd970a418b1187690e3d631, type: 2}
-  - {fileID: 2100000, guid: a74af49949acb0945b8396d6fa7b0bc5, type: 2}
   - {fileID: 2100000, guid: ed9aebda56750c24c9f2ef065bd71036, type: 2}
   - {fileID: 2100000, guid: f98fccf8c9b426040972979a450f32f2, type: 2}
 --- !u!1 &185799237
@@ -10086,6 +10085,10 @@ PrefabInstance:
       propertyPath: m_Size.z
       value: 1.4
       objectReference: {fileID: 0}
+    - target: {fileID: 7818530429083503460, guid: 0520e268e72d34844b52ad3a8b2473ff, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2a10483549764b84ea60530965daaf97, type: 2}
     - target: {fileID: 8611441520705628849, guid: 0520e268e72d34844b52ad3a8b2473ff, type: 3}
       propertyPath: m_Name
       value: Cube 5
@@ -10260,6 +10263,10 @@ PrefabInstance:
       propertyPath: m_Size.z
       value: 1.4
       objectReference: {fileID: 0}
+    - target: {fileID: 7265279229756087575, guid: 97c3c101a2a52aa47817bd3b97936311, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0711445adf5d30c40bd0eb92c9335290, type: 2}
     - target: {fileID: 8401562050051794552, guid: 97c3c101a2a52aa47817bd3b97936311, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -16494,6 +16501,10 @@ PrefabInstance:
       propertyPath: m_Size.z
       value: 1.4
       objectReference: {fileID: 0}
+    - target: {fileID: 7265279229756087575, guid: 97c3c101a2a52aa47817bd3b97936311, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0711445adf5d30c40bd0eb92c9335290, type: 2}
     - target: {fileID: 8401562050051794552, guid: 97c3c101a2a52aa47817bd3b97936311, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -21583,6 +21594,10 @@ PrefabInstance:
       propertyPath: m_Size.z
       value: 1.4
       objectReference: {fileID: 0}
+    - target: {fileID: 7818530429083503460, guid: 0520e268e72d34844b52ad3a8b2473ff, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2a10483549764b84ea60530965daaf97, type: 2}
     - target: {fileID: 8611441520705628849, guid: 0520e268e72d34844b52ad3a8b2473ff, type: 3}
       propertyPath: m_Name
       value: Cube 1
@@ -36519,7 +36534,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 620e1324de496f64986b31ca0fc25f3b, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 805a4aad09060f64784241d6948d6013, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -36580,7 +36595,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.047222223
       inSlope: 0
       outSlope: 0
       tangentMode: 0
