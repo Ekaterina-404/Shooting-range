@@ -5,8 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Target
-  - bullet
   - Environment
+  - Bullet
+  - Effect
   layers:
   - Default
   - TransparentFX

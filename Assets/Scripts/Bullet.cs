@@ -22,7 +22,7 @@ namespace ShootingRange
                 _canPlayParticles = false;
             }
 
-            if (collision.gameObject.tag == "Respawn")
+            if (collision.gameObject.tag == "Finish")
             {
                 Destroy(gameObject);
             }
@@ -31,7 +31,7 @@ namespace ShootingRange
         public void Fire(Vector3 direction)
         { 
             _rigidbody.AddForce(direction);
-            Destroy(gameObject, 5f);
+            Destroy(gameObject, 3f);
         }
 
         public void SetGravity(bool gravityEnabled)
@@ -54,7 +54,7 @@ namespace ShootingRange
             _meshRenderer.material = material;
         }
 
-        public void SetRotation(bool rotationEnabled)
+        public void SetRotation(bool rotationEnabled) //переделать
         {
             _rigidbody.freezeRotation = false;
         }

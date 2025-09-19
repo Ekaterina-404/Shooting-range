@@ -8,15 +8,15 @@ namespace ShootingRange
 
         private Rigidbody _rigidbodyCube;
 
-        private void OnCollisionEnter(Collision collision) // Выполняется при столкновении объекта с другим объектом 
+        private void OnCollisionEnter(Collision collision) 
         {
-            if (collision.gameObject.CompareTag("Respawn")) // Проверка, столкновения этого объект с определенным объектом
+            if (collision.gameObject.CompareTag("Finish")) 
             {
                 _gameFinishTrigger.DecreaseTargetsCount();
                 Destroy(gameObject);
             }
 
-            if (collision.gameObject.CompareTag("bullet"))
+            if (collision.gameObject.CompareTag("Bullet")) 
             {
                 _rigidbodyCube = GetComponent<Rigidbody>();
                 _rigidbodyCube.mass = 1;

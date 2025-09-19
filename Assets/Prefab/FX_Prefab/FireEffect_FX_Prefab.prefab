@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4435803407823383236}
   m_Layer: 0
   m_Name: Fire2
-  m_TagString: Untagged
+  m_TagString: Effect
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4841,7 +4841,7 @@ GameObject:
   - component: {fileID: 6898324570241551891}
   m_Layer: 0
   m_Name: FireEffect_FX_Prefab
-  m_TagString: Untagged
+  m_TagString: Effect
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9680,7 +9680,7 @@ GameObject:
   - component: {fileID: 6555797650894480245}
   m_Layer: 0
   m_Name: Fire1
-  m_TagString: Untagged
+  m_TagString: Effect
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

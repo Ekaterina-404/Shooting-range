@@ -15,10 +15,10 @@ namespace ShootingRange
                 Destroy(cube);
             }
 
-            if (collision.gameObject.tag == "bullet")
+            if (collision.gameObject.tag == "Bullet")
             {
                 СreateParticle(collision);
-                var bullet = GameObject.Find("bullet");
+                var bullet = GameObject.Find("Bullet");
                 Destroy(bullet);
             }
         }
@@ -27,7 +27,7 @@ namespace ShootingRange
         {
             Vector3 position = collision.contacts[0].point;
             Quaternion rotation = Quaternion.LookRotation(collision.contacts[0].normal);
-            ParticleSystem effectFalling = Instantiate(_effectFallingPrefab, position, rotation);
+            Instantiate(_effectFallingPrefab, position, rotation);
         }
     }
 }
