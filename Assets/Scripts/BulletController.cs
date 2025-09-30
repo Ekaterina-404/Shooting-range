@@ -35,7 +35,7 @@ namespace ShootingRange
             {
                 FixItToMouse(_currentBullet);
 
-                if (Input.GetMouseButtonUp(0) && _bulletsFired < 5)
+                if (Input.GetMouseButtonUp(0) && _bulletsFired <= _bulletAmmo)
                 {
                     _currentBullet.SetGravity(true);
                     _currentBullet.SetTrail(true);
@@ -46,15 +46,13 @@ namespace ShootingRange
             }
         }
 
-        private void OnTriggerExit(Collider other) // а че мы не работаем
+        private void OnTriggerExit(Collider other)
         {
-            if (_bulletsFired < _bulletAmmo)
+            _bulletsFired += 1;
+
+            if (_bulletsFired == _bulletAmmo)
             {
-                _bulletsFired += 1;
-            }
-            else
-            {
-                Invoke(nameof(ResetAmmoBullet), 1.5f);
+                Invoke(nameof(ResetAmmoBullet), 2f);
             }
         }
 

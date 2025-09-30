@@ -12896,9 +12896,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameOverUI: {fileID: 2131308784}
+  _environment: {fileID: 395792829}
   _audio: {fileID: 2131308789}
   _buttonRestart: {fileID: 1154164673}
-  _environment: {fileID: 395792829}
 --- !u!82 &2131308789
 AudioSource:
   m_ObjectHideFlags: 0

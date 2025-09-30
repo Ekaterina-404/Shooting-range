@@ -1,5 +1,3 @@
-using Unity.VisualScripting;
-
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,9 +6,9 @@ namespace ShootingRange
     public class GameOver : MonoBehaviour
     {
         [SerializeField] private GameObject _gameOverUI;
+        [SerializeField] private GameObject _environment;
         [SerializeField] private AudioSource _audio;
         [SerializeField] private Button _buttonRestart;
-        [SerializeField] private GameObject _environment;
 
         public void EndTheGame()
         {
@@ -22,7 +20,7 @@ namespace ShootingRange
 
         private void RemoveEffects()
         {
-            var effect = GameObject.FindGameObjectWithTag("Effect"); 
+            var effect = GameObject.FindGameObjectWithTag("Effect");
             Destroy(effect);
         }
     }
