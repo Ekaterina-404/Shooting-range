@@ -48,6 +48,7 @@ namespace ShootingRange
 
         private void OnTriggerExit(Collider other)
         {
+            
             _bulletsFired += 1;
 
             if (_bulletsFired == _bulletAmmo)
