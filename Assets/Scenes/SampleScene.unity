@@ -282,9 +282,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 160671293}
+  - component: {fileID: 160671295}
   - component: {fileID: 160671292}
   - component: {fileID: 160671294}
-  - component: {fileID: 160671295}
+  - component: {fileID: 160671296}
   m_Layer: 0
   m_Name: SphereController
   m_TagString: GameController
@@ -307,9 +308,9 @@ MonoBehaviour:
   _gameOverUI: {fileID: 2131308784}
   _force: 3000
   _distance: 5
-  _bulletAmmo: 5
   _bulletPrefab: {fileID: 2018104187991267711, guid: b1edc004b7e3a0a4da803134870c0f12, type: 3}
   _colorProvider: {fileID: 160671294}
+  _ammoTracker: {fileID: 160671296}
 --- !u!4 &160671293
 Transform:
   m_ObjectHideFlags: 0
@@ -318,8 +319,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 160671291}
   m_LocalRotation: {x: 0.0043920563, y: 0.075507306, z: 0.0025137393, w: 0.9971324}
-  m_LocalPosition: {x: -56.52, y: -11.21, z: -17.14}
-  m_LocalScale: {x: 11.335116, y: 7.6954856, z: 5.478991}
+  m_LocalPosition: {x: -56.39, y: -11.78, z: -19.07}
+  m_LocalScale: {x: 14.848868, y: 10.080995, z: 7.1774135}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 21097280}
@@ -362,8 +363,26 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.146338, z: 0.35821697}
+  m_Center: {x: -2.5689695e-10, y: 0.07316846, z: -0.12776184}
+--- !u!114 &160671296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160671291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c698857f31b09a43acb2187900abc8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _chargeBullet:
+  - {fileID: 1833630738}
+  - {fileID: 1223768699}
+  - {fileID: 1864459949}
+  - {fileID: 508904022}
+  - {fileID: 608540642}
 --- !u!1 &283248664
 GameObject:
   m_ObjectHideFlags: 0
@@ -1876,7 +1895,7 @@ Camera:
     height: 1
   near clip plane: 0.2
   far clip plane: 200
-  field of view: 40
+  field of view: 42
   orthographic: 0
   orthographic size: 5
   m_Depth: 0

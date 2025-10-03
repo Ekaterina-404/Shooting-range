@@ -10,16 +10,17 @@ namespace ShootingRange
         [Header("Values")]
         [SerializeField] private float _force = 3000f;
         [SerializeField] private float _distance = 6f;
-        [SerializeField] private int _bulletAmmo = 5;
+        // [SerializeField] private int _bulletAmmo = 5;
 
         [Header("References")]
         [SerializeField] private Bullet _bulletPrefab;
         [SerializeField] private ColorProvider _colorProvider;
+        [SerializeField] private AmmoTracker _ammoTracker;
 
         private Camera _camera;
         private Bullet _currentBullet;
         private Vector3 _direction;
-        private int _bulletsFired;
+        //private int _bulletsFired;
 
         private void Start()
         {
@@ -35,7 +36,7 @@ namespace ShootingRange
             {
                 FixItToMouse(_currentBullet);
 
-                if (Input.GetMouseButtonUp(0) && _bulletsFired <= _bulletAmmo)
+                if (Input.GetMouseButtonUp(0) && _ammoTracker.AmmoBullet > 0)
                 {
                     _currentBullet.SetGravity(true);
                     _currentBullet.SetTrail(true);
@@ -48,18 +49,7 @@ namespace ShootingRange
 
         private void OnTriggerExit(Collider other)
         {
-            
-            _bulletsFired += 1;
-
-            if (_bulletsFired == _bulletAmmo)
-            {
-                Invoke(nameof(ResetAmmoBullet), 2f);
-            }
-        }
-
-        private void ResetAmmoBullet()
-        {
-            _bulletsFired = 0;
+            _ammoTracker.SpendAmmoBullet();
         }
 
         private void CreateSphere()
