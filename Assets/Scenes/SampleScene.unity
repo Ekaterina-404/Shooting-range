@@ -307,7 +307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameOverUI: {fileID: 2131308784}
   _force: 3000
-  _distance: 5
+  _distance: 6
   _bulletPrefab: {fileID: 2018104187991267711, guid: b1edc004b7e3a0a4da803134870c0f12, type: 3}
   _colorProvider: {fileID: 160671294}
   _ammoTracker: {fileID: 160671296}
@@ -319,7 +319,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 160671291}
   m_LocalRotation: {x: 0.0043920563, y: 0.075507306, z: 0.0025137393, w: 0.9971324}
-  m_LocalPosition: {x: -56.39, y: -11.78, z: -19.07}
+  m_LocalPosition: {x: -56.33, y: -11.78, z: -18.69}
   m_LocalScale: {x: 14.848868, y: 10.080995, z: 7.1774135}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1895,7 +1895,7 @@ Camera:
     height: 1
   near clip plane: 0.2
   far clip plane: 200
-  field of view: 42
+  field of view: 40
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -1920,14 +1920,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.0006812138, y: 0.07124041, z: 0.00006501633, w: 0.99745893}
+  m_LocalRotation: {x: -0.0066648927, y: 0.071238, z: 0.00058968615, w: 0.99743694}
   m_LocalPosition: {x: -1.62, y: 1.91, z: -4.6}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0.077, y: 8.17, z: 0.013}
+  m_LocalEulerAnglesHint: {x: -0.767, y: 8.17, z: 0.013}
 --- !u!1 &971383440
 GameObject:
   m_ObjectHideFlags: 0

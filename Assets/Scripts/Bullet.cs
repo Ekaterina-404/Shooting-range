@@ -53,10 +53,5 @@ namespace ShootingRange
         {
             _meshRenderer.material = material;
         }
-
-        public void SetRotation(bool rotationEnabled) //переделать
-        {
-            _rigidbody.freezeRotation = false;
-        }
     }
 }

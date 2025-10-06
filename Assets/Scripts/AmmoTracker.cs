@@ -11,8 +11,7 @@ namespace ShootingRange
 
         private void Awake()
         {
-            AmmoBullet = _ammoBulletMax - 1;
-            SpendChargeBullet(0);
+            ResetAmmoBullet();
         }
 
         internal void SpendAmmoBullet()

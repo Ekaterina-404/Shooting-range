@@ -10,7 +10,6 @@ namespace ShootingRange
         [Header("Values")]
         [SerializeField] private float _force = 3000f;
         [SerializeField] private float _distance = 6f;
-        // [SerializeField] private int _bulletAmmo = 5;
 
         [Header("References")]
         [SerializeField] private Bullet _bulletPrefab;
@@ -20,7 +19,6 @@ namespace ShootingRange
         private Camera _camera;
         private Bullet _currentBullet;
         private Vector3 _direction;
-        //private int _bulletsFired;
 
         private void Start()
         {
@@ -40,7 +38,6 @@ namespace ShootingRange
                 {
                     _currentBullet.SetGravity(true);
                     _currentBullet.SetTrail(true);
-                    _currentBullet.SetRotation(true);
                     _currentBullet.Fire(_direction);
                     CreateSphere();
                 }
