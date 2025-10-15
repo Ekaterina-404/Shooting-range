@@ -7,13 +7,15 @@ namespace ShootingRange
     {
         [SerializeField] private GameObject _gameOverUI;
         [SerializeField] private GameObject _environment;
+        [SerializeField] private GameObject _ammunition;
         [SerializeField] private AudioSource _audio;
         [SerializeField] private Button _buttonRestart;
 
         public void EndTheGame()
         {
-            _gameOverUI.SetActive(true);
             _environment.SetActive(false);
+            _ammunition.SetActive(false);
+            _gameOverUI.SetActive(true);
             _audio.Play();
             RemoveEffects();
         }

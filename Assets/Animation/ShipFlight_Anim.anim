@@ -241,15 +241,6 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.95
         value: {x: 0.04, y: 0.04, z: 0.04}
-        inSlope: {x: -0.9428571, y: -0.9428571, z: -0.9428571}
-        outSlope: {x: -0.9428571, y: -0.9428571, z: -0.9428571}
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-      - serializedVersion: 3
-        time: 0.98333335
-        value: {x: 0, y: 0, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -1087,15 +1078,6 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.95
         value: 0.04
-        inSlope: -0.9428571
-        outSlope: -0.9428571
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.98333335
-        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1144,15 +1126,6 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.95
         value: 0.04
-        inSlope: -0.9428571
-        outSlope: -0.9428571
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.98333335
-        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1201,15 +1174,6 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.95
         value: 0.04
-        inSlope: -0.9428571
-        outSlope: -0.9428571
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.98333335
-        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -1299,4 +1263,18 @@ AnimationClip:
     flags: 0
   m_HasGenericRootTransform: 1
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.98333335
+    functionName: DisableShip
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.98333335
+    functionName: 
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

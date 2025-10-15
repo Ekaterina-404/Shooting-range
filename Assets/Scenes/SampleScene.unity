@@ -1050,6 +1050,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 454826032084446261, guid: f00c8df389af47046baea2d14b531550, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1151077807}
+    - targetCorrespondingSourceObject: {fileID: 454826032084446261, guid: f00c8df389af47046baea2d14b531550, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1151077810}
   m_SourcePrefab: {fileID: 100100000, guid: f00c8df389af47046baea2d14b531550, type: 3}
 --- !u!1 &567662565 stripped
 GameObject:
@@ -2243,6 +2246,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1151077810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567662565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d50f508640168dd49bc8bb745100654e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ship: {fileID: 567662565}
 --- !u!1 &1154164671
 GameObject:
   m_ObjectHideFlags: 0
@@ -2690,8 +2706,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347325992}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.9, y: -5, z: 53}
-  m_LocalScale: {x: 5.5685997, y: 2.1527083, z: 10.220101}
+  m_LocalPosition: {x: 1.9, y: -5, z: 52.3}
+  m_LocalScale: {x: 5.470147, y: 2.1146483, z: 10.03941}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395792830}
@@ -13058,6 +13074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameOverUI: {fileID: 2131308784}
   _environment: {fileID: 395792829}
+  _ammunition: {fileID: 1529411988}
   _audio: {fileID: 2131308789}
   _buttonRestart: {fileID: 1154164673}
 --- !u!82 &2131308789
