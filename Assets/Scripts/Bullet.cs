@@ -16,22 +16,31 @@ namespace ShootingRange
 
         private void OnCollisionEnter(Collision collision)
         {
-            if (collision.gameObject.tag == "Target" && _canPlayParticles)
+            if (collision.gameObject.CompareTag("Target") && _canPlayParticles)
             {
                 _piecesEffect.Play();
                 _canPlayParticles = false;
             }
 
-            if (collision.gameObject.tag == "Finish")
+            if (collision.gameObject.CompareTag("Finish"))
             {
                 Destroy(gameObject);
             }
         }
 
         public void Fire(Vector3 direction)
-        { 
+        {
+            _rigidbody.freezeRotation = false;
+            Quaternion rotation = Quaternion.LookRotation(direction, Vector3.up);
+            _transform.rotation = rotation;
+
             _rigidbody.AddForce(direction);
             Destroy(gameObject, 2f);
+        }
+
+        public void DisableKinematic(bool disablesKinematic)
+        {
+            _rigidbody.isKinematic = disablesKinematic;
         }
 
         public void SetGravity(bool gravityEnabled)

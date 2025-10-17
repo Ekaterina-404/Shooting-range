@@ -8,22 +8,22 @@ namespace ShootingRange
 
         private void OnCollisionEnter(Collision collision)
         {
-            if (collision.gameObject.tag == "Target")
+            if (collision.gameObject.CompareTag("Target"))
             {
-                СreateParticle(collision);
-                var cube = GameObject.Find("Target");
+                CreateParticle(collision);
+                var cube = collision.gameObject;
                 Destroy(cube);
             }
 
-            if (collision.gameObject.tag == "Bullet")
+            if (collision.gameObject.CompareTag("Bullet"))
             {
-                СreateParticle(collision);
-                var bullet = GameObject.Find("Bullet");
+                CreateParticle(collision);
+                var bullet = collision.gameObject;
                 Destroy(bullet);
             }
         }
 
-        private void СreateParticle(Collision collision)
+        private void CreateParticle(Collision collision)
         {
             Vector3 position = collision.contacts[0].point;
             Quaternion rotation = Quaternion.LookRotation(collision.contacts[0].normal);

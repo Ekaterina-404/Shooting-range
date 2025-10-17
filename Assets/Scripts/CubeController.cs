@@ -15,8 +15,8 @@ namespace ShootingRange
         {
             if (colliderObject.gameObject.CompareTag("Target"))
             {
-                GameObject Cube = colliderObject.gameObject;
-                _rigidbodyCube = Cube.GetComponent<Rigidbody>();
+                GameObject cube = colliderObject.gameObject;
+                _rigidbodyCube = cube.GetComponent<Rigidbody>();
                 _rigidbodyCube.mass = 1;
                 _countCube += 1;
 
