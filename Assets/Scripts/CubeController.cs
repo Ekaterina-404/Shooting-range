@@ -1,9 +1,13 @@
+using System;
+
 using UnityEngine;
 
 namespace ShootingRange
 {
-    public class CubeMassController : MonoBehaviour
+    public class CubeController : MonoBehaviour
     {
+        [SerializeField] private GameFinishTrigger _gameFinishTrigger;
+
         private int _countCube;
         private Rigidbody _rigidbodyCube;
 
@@ -20,6 +24,14 @@ namespace ShootingRange
                 {
                     Debug.Log("Все кубы на месте");
                 }
+            }
+        }
+
+        private void OnTriggerExit(Collider colliderObject)
+        {
+            if (colliderObject.gameObject.CompareTag("Target"))
+            {
+                _gameFinishTrigger.DecreaseTargetsCount();
             }
         }
     }

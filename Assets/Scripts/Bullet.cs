@@ -31,7 +31,7 @@ namespace ShootingRange
         public void Fire(Vector3 direction)
         { 
             _rigidbody.AddForce(direction);
-            Destroy(gameObject, 3f);
+            Destroy(gameObject, 2f);
         }
 
         public void SetGravity(bool gravityEnabled)

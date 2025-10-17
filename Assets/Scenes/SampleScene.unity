@@ -201,7 +201,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d0ad24ef48a9d34e82206457981c801, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameFinishTrigger: {fileID: 930832328}
 --- !u!4 &119743164 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8992048931936743435, guid: 0520e268e72d34844b52ad3a8b2473ff, type: 3}
@@ -273,6 +272,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b934f3cfab94aad49b86e5c19144cc71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _gameFinishTrigger: {fileID: 930832328}
 --- !u!1 &160671291
 GameObject:
   m_ObjectHideFlags: 0
@@ -630,7 +630,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d0ad24ef48a9d34e82206457981c801, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameFinishTrigger: {fileID: 930832328}
 --- !u!54 &388579957
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2082,7 +2081,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d0ad24ef48a9d34e82206457981c801, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameFinishTrigger: {fileID: 930832328}
 --- !u!54 &1066850663
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2730,7 +2728,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d0ad24ef48a9d34e82206457981c801, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameFinishTrigger: {fileID: 930832328}
 --- !u!54 &1364656837
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12829,7 +12826,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d0ad24ef48a9d34e82206457981c801, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameFinishTrigger: {fileID: 930832328}
 --- !u!54 &1997245727
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -12879,7 +12875,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d0ad24ef48a9d34e82206457981c801, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameFinishTrigger: {fileID: 930832328}
 --- !u!54 &2010732364
 Rigidbody:
   m_ObjectHideFlags: 0
