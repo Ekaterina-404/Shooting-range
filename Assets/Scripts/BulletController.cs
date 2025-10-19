@@ -55,10 +55,10 @@ namespace ShootingRange
         {
             _currentBullet = Instantiate(_bulletPrefab);
             _currentBullet.DisableKinematic(false);
-            SetRandomMaterial(_currentBullet);
+            SetRandomMaterialBullet(_currentBullet);
         }
 
-        private void SetRandomMaterial(Bullet bullet)
+        private void SetRandomMaterialBullet(Bullet bullet)
         {
             var material = _colorProvider.GetRandomMaterial();
             bullet.SetMaterial(material);
