@@ -8,11 +8,14 @@ namespace ShootingRange
         [SerializeField] private GameObject _gameOverUI;
         [SerializeField] private GameObject _environment;
         [SerializeField] private GameObject _ammunition;
+        [SerializeField] private GameObject _background;
         [SerializeField] private AudioSource _audio;
         [SerializeField] private Button _buttonRestart;
+        
 
         public void EndTheGame()
         {
+            _background.GetComponent<Terrain>().enabled = false;
             _environment.SetActive(false);
             _ammunition.SetActive(false);
             _gameOverUI.SetActive(true);
@@ -25,5 +28,6 @@ namespace ShootingRange
             var effect = GameObject.FindGameObjectWithTag("Effect");
             Destroy(effect);
         }
+        
     }
 }

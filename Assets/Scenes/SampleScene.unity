@@ -5,8 +5,8 @@ OcclusionCullingSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_OcclusionBakeSettings:
-    smallestOccluder: 5
-    smallestHole: 0.25
+    smallestOccluder: 6.11
+    smallestHole: 5.57
     backfaceThreshold: 100
   m_SceneGUID: 00000000000000000000000000000000
   m_OcclusionCullingData: {fileID: 0}
@@ -587,7 +587,6 @@ Transform:
   - {fileID: 705341673}
   - {fileID: 1347325996}
   - {fileID: 1991389840}
-  - {fileID: 1138994651}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -811,19 +810,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3464539170958515750, guid: f00c8df389af47046baea2d14b531550, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3464539170958515750, guid: f00c8df389af47046baea2d14b531550, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.58194995
+      value: 0.49450618
       objectReference: {fileID: 0}
     - target: {fileID: 3464539170958515750, guid: f00c8df389af47046baea2d14b531550, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.58194995
+      value: 0.49450618
       objectReference: {fileID: 0}
     - target: {fileID: 3464539170958515750, guid: f00c8df389af47046baea2d14b531550, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.58194995
+      value: 0.49450618
       objectReference: {fileID: 0}
     - target: {fileID: 3464539170958515750, guid: f00c8df389af47046baea2d14b531550, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1506,7 +1505,7 @@ Transform:
   - {fileID: 1066850667}
   - {fileID: 388579961}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &910015070
 GameObject:
@@ -1661,7 +1660,7 @@ Camera:
     height: 1
   near clip plane: 0.2
   far clip plane: 200
-  field of view: 40
+  field of view: 43
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -1686,14 +1685,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.006672948, y: 0.06287699, z: 0.00053410913, w: 0.9979989}
+  m_LocalRotation: {x: 0.010307475, y: 0.062876984, z: -0.0005357262, w: 0.99796796}
   m_LocalPosition: {x: -1.62, y: 1.91, z: -4.6}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -0.767, y: 7.21, z: 0.013}
+  m_LocalEulerAnglesHint: {x: 1.183, y: 7.21, z: 0.013}
 --- !u!114 &963194229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1863,12 +1862,12 @@ Terrain:
   m_TreeMaximumFullLODCount: 50
   m_DetailObjectDistance: 80
   m_DetailObjectDensity: 1
-  m_HeightmapPixelError: 5
-  m_SplatMapDistance: 1000
+  m_HeightmapPixelError: 50
+  m_SplatMapDistance: 1056
   m_HeightmapMaximumLOD: 0
   m_ShadowCastingMode: 2
   m_DrawHeightmap: 1
-  m_DrawInstanced: 0
+  m_DrawInstanced: 1
   m_DrawTreesAndFoliage: 1
   m_StaticShadowCaster: 0
   m_IgnoreQualitySettings: 0
@@ -1883,7 +1882,7 @@ Terrain:
   m_GroupingID: 0
   m_RenderingLayerMask: 1
   m_AllowAutoConnect: 1
-  m_EnableHeightmapRayTracing: 1
+  m_EnableHeightmapRayTracing: 0
   m_EnableTreesAndDetailsRayTracing: 0
 --- !u!4 &1138994651
 Transform:
@@ -1893,12 +1892,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1138994648}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -46.7, y: -5.51, z: 1.8}
+  m_LocalPosition: {x: -28.84, y: -5.51, z: 1.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 395792830}
-  m_RootOrder: -1
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1138994652
 MonoBehaviour:
@@ -2365,8 +2364,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347325992}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.9, y: -5, z: 52.3}
-  m_LocalScale: {x: 5.470147, y: 2.1146483, z: 10.03941}
+  m_LocalPosition: {x: -0.0539, y: -5, z: 30.9975}
+  m_LocalScale: {x: 3.1370494, y: 0.92716473, z: 5.9990225}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395792830}
@@ -2400,9 +2399,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1529411988}
-  m_LocalRotation: {x: 0.006771783, y: 0.000095970914, z: -0.00000064989575, w: 0.99997705}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 0.24875851, y: 0.24875851, z: 0.24875851}
+  m_LocalRotation: {x: 0.004805506, y: -0.004783665, z: 0.7054782, w: 0.7086993}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.18214117, y: 0.20098208, z: 0.18214117}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1833630739}
@@ -2412,10 +2411,10 @@ RectTransform:
   - {fileID: 608540643}
   m_Father: {fileID: 1664683847}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 26.600098, y: 148.70001}
+  m_LocalEulerAnglesHint: {x: 0.777, y: 0, z: 89.739}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -120, y: 25}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1664683843
@@ -7376,14 +7375,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1833630738}
-  m_LocalRotation: {x: -0.006771783, y: -0.00009597092, z: 0.00000064989575, w: 0.9999771}
+  m_LocalRotation: {x: 0, y: -0.000096061056, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.8}
   m_LocalScale: {x: 1.8341862, y: 1.8341862, z: 1.8341862}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1529411989}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0.011, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 40.3, y: 160.2}
@@ -12499,6 +12498,7 @@ MonoBehaviour:
   _gameOverUI: {fileID: 2131308784}
   _environment: {fileID: 395792829}
   _ammunition: {fileID: 1529411988}
+  _background: {fileID: 1138994648}
   _audio: {fileID: 2131308789}
   _buttonRestart: {fileID: 1154164673}
 --- !u!82 &2131308789
