@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace ShootingRange
 {
-    public class ColorProvider : MonoBehaviour
+    public class MaterialProvider : MonoBehaviour
     {
         [SerializeField] private Material[] _materials;
 

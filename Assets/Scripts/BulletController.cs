@@ -13,7 +13,7 @@ namespace ShootingRange
         
         [Header("References")]
         [SerializeField] private Bullet _bulletPrefab;
-        [SerializeField] private ColorProvider _colorProvider;
+        [SerializeField] private MaterialProvider _materialProvider;
         [SerializeField] private AmmoTracker _ammoTracker;
 
         private Camera _camera;
@@ -60,7 +60,7 @@ namespace ShootingRange
 
         private void SetRandomMaterialBullet(Bullet bullet)
         {
-            var material = _colorProvider.GetRandomMaterial();
+            var material = _materialProvider.GetRandomMaterial();
             bullet.SetMaterial(material);
         }
 

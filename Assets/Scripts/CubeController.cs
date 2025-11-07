@@ -7,7 +7,7 @@ namespace ShootingRange
     public class CubeController : MonoBehaviour
     {
         [SerializeField] private GameFinishTrigger _gameFinishTrigger;
-        [SerializeField] private ColorProvider _colorProvider;
+        //[SerializeField] private ColorProvider _colorProvider;
 
         private int _countCube;
         private Rigidbody _rigidbodyCube;
@@ -21,7 +21,7 @@ namespace ShootingRange
                 _rigidbodyCube = cube.GetComponent<Rigidbody>();
                 _rigidbodyCube.mass = 1;
                 _countCube += 1;
-                SetRandomMaterialCube(cube);
+                // SetRandomMaterialCube(cube);
 
                 if (_countCube == 6)
                 {
@@ -38,11 +38,11 @@ namespace ShootingRange
             }
         }
 
-        private void SetRandomMaterialCube(GameObject cube)
+        /*private void SetRandomMaterialCube(GameObject cube)
         {
             _meshRendererCube = cube.GetComponent<MeshRenderer>();
             var materialCube = _colorProvider.GetRandomMaterial();
             _meshRendererCube.material = materialCube;
-        }
+        }*/
     }
 }

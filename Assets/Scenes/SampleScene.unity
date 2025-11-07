@@ -225,7 +225,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameFinishTrigger: {fileID: 930832328}
-  _colorProvider: {fileID: 151836553}
 --- !u!114 &151836553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,16 +234,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 151836549}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22c1d790ecbd41c4aa3a2fb7c8b5d523, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c088a0facaf68d4c88b530d5a40e265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _materials:
-  - {fileID: 2100000, guid: 2a10483549764b84ea60530965daaf97, type: 2}
-  - {fileID: 2100000, guid: c27a14adfb55f5340a4f595269d6ddbb, type: 2}
-  - {fileID: 2100000, guid: a139c66c1ce0e6140b0483105cc2f387, type: 2}
-  - {fileID: 2100000, guid: 0711445adf5d30c40bd0eb92c9335290, type: 2}
-  - {fileID: 2100000, guid: e8b5b628a7df3304ea784f49f8d5f3d9, type: 2}
-  - {fileID: 2100000, guid: ceeec03f598c4f34eaba6bc50313d821, type: 2}
 --- !u!1 &160671291
 GameObject:
   m_ObjectHideFlags: 0
@@ -281,7 +273,7 @@ MonoBehaviour:
   _force: 3000
   _distance: 6
   _bulletPrefab: {fileID: 2018104187991267711, guid: b1edc004b7e3a0a4da803134870c0f12, type: 3}
-  _colorProvider: {fileID: 160671294}
+  _materialProvider: {fileID: 160671294}
   _ammoTracker: {fileID: 160671296}
 --- !u!4 &160671293
 Transform:
