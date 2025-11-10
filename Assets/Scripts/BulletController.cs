@@ -37,7 +37,6 @@ namespace ShootingRange
 
                 if (Input.GetMouseButtonUp(0) && _ammoTracker.AmmoBullet > 0)
                 {
-                    _currentBullet.DisableKinematic(false);
                     _currentBullet.SetGravity(true);
                     _currentBullet.SetTrail(true);
                     _currentBullet.Fire(_direction);
@@ -54,7 +53,6 @@ namespace ShootingRange
         private void CreateSphere()
         {
             _currentBullet = Instantiate(_bulletPrefab);
-            _currentBullet.DisableKinematic(false);
             SetRandomMaterialBullet(_currentBullet);
         }
 

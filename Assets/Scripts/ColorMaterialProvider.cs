@@ -1,27 +1,46 @@
-using System;
-
 using UnityEngine;
 
 using Random = System.Random;
 
-public class ColorMaterialProvider : MonoBehaviour
+namespace ShootingRange
 {
-    private string[] colors = { "red", "blue", "green", "white", "yellow", "magenta", "gray" }; //7 элементов от 0 до 6
-    private Random random = new Random();
-
-    private void Start()
+    public class ColorMaterialProvider : MonoBehaviour
     {
-        ShuffleArray(colors);
-    }
+        [SerializeField] private GameObject _prefab;//для проверки работы MaterialPropertyBlock
 
-    private void ShuffleArray(string[] array)
-    {
-        for (int i = array.Length - 1; i > 0; i--)
+        private Color[] _colors =
+            { Color.red, Color.blue, Color.green, Color.white, Color.yellow, Color.magenta, Color.grey };
+        private Random _random;
+
+        public void Start()
         {
-            int randomNumber = random.Next(i - 1);
-            string temp = array[i];
-            array[i] = array[randomNumber];
-            array[randomNumber] = temp;
+            _random = new Random();
+            ShuffleArray(_colors);
+            var cube = Instantiate(_prefab); //для проверки
+            MaterialPropertyBlock block = new MaterialPropertyBlock();
+            block.SetColor("_Color",Color.blue);
+            cube.GetComponent<MeshRenderer>().SetPropertyBlock(block);
         }
+
+
+        private void ShuffleArray(Color[] colors)
+        {
+            for (int i = colors.Length - 1; i > 0; i--)
+            {
+                int randomNumber = _random.Next(i - 1);
+                var temp = colors[i];
+                colors[i] = colors[randomNumber];
+                colors[randomNumber] = temp;
+            }
+        }
+        /*private void SetColorCube(GameObject[] cubes)
+        {
+            for (int i = 0; i < cubes.Length; i++)
+            {
+                var mesh = _cubes[i].GetComponent<MeshRenderer>();
+                _block.SetColor(_color, _colors[i]);
+                mesh.SetPropertyBlock(_block);
+            }
+        }*/
     }
 }

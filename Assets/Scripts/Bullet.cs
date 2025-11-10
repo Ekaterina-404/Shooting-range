@@ -37,12 +37,7 @@ namespace ShootingRange
             _rigidbody.AddForce(direction);
             Destroy(gameObject, 2f);
         }
-
-        public void DisableKinematic(bool disablesKinematic)
-        {
-            _rigidbody.isKinematic = disablesKinematic;
-        }
-
+        
         public void SetGravity(bool gravityEnabled)
         {
             _rigidbody.useGravity = gravityEnabled;

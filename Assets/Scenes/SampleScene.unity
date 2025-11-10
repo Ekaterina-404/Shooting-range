@@ -168,7 +168,6 @@ GameObject:
   - component: {fileID: 151836551}
   - component: {fileID: 151836550}
   - component: {fileID: 151836552}
-  - component: {fileID: 151836553}
   m_Layer: 0
   m_Name: CubeController
   m_TagString: GameController
@@ -225,18 +224,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameFinishTrigger: {fileID: 930832328}
---- !u!114 &151836553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 151836549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c088a0facaf68d4c88b530d5a40e265, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &160671291
 GameObject:
   m_ObjectHideFlags: 0
@@ -1471,6 +1458,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 900803670}
+  - component: {fileID: 900803671}
   m_Layer: 0
   m_Name: TargetContainer
   m_TagString: GameController
@@ -1499,6 +1487,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &900803671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900803669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c088a0facaf68d4c88b530d5a40e265, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _prefab: {fileID: 998883452211131557, guid: c95671d8eb68f2a4d8e6092b93eaa4de, type: 3}
 --- !u!1 &910015070
 GameObject:
   m_ObjectHideFlags: 0
@@ -1837,7 +1838,7 @@ TerrainCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_TerrainData: {fileID: 15600000, guid: 5f6c7dd1ec53ec14a898f3010a538746, type: 2}
-  m_EnableTreeColliders: 1
+  m_EnableTreeColliders: 0
 --- !u!218 &1138994650
 Terrain:
   m_ObjectHideFlags: 0
