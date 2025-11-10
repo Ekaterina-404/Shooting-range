@@ -334,6 +334,7 @@ MonoBehaviour:
   - {fileID: 1864459949}
   - {fileID: 508904022}
   - {fileID: 608540642}
+  AmmoBullet: 0
 --- !u!1 &283248664
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,7 +645,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 173115154788271577, guid: c95671d8eb68f2a4d8e6092b93eaa4de, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.048811793
+      value: 0.23
       objectReference: {fileID: 0}
     - target: {fileID: 173115154788271577, guid: c95671d8eb68f2a4d8e6092b93eaa4de, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1458,7 +1459,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 900803670}
-  - component: {fileID: 900803671}
   m_Layer: 0
   m_Name: TargetContainer
   m_TagString: GameController
@@ -1487,19 +1487,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &900803671
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 900803669}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c088a0facaf68d4c88b530d5a40e265, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _prefab: {fileID: 998883452211131557, guid: c95671d8eb68f2a4d8e6092b93eaa4de, type: 3}
 --- !u!1 &910015070
 GameObject:
   m_ObjectHideFlags: 0
@@ -1855,7 +1842,7 @@ Terrain:
   m_TreeMaximumFullLODCount: 50
   m_DetailObjectDistance: 80
   m_DetailObjectDensity: 1
-  m_HeightmapPixelError: 50
+  m_HeightmapPixelError: 100
   m_SplatMapDistance: 1056
   m_HeightmapMaximumLOD: 0
   m_ShadowCastingMode: 2
@@ -7839,8 +7826,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.15
-      minScalar: 0.07
+      scalar: 0.2
+      minScalar: 0.09
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -8303,7 +8290,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 1
+      value: 0.79504836
       mode: 0
       spread: 0
       speed:
@@ -8422,7 +8409,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 50
+      scalar: 15
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -12316,8 +12303,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1991389837}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 3.5, y: -5.1, z: 8.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.98, y: -0.9, z: 2.67}
+  m_LocalScale: {x: 0.45125547, y: 0.45125547, z: 0.45125547}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 395792830}
