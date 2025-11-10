@@ -645,7 +645,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 173115154788271577, guid: c95671d8eb68f2a4d8e6092b93eaa4de, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.23
+      value: -0.11
       objectReference: {fileID: 0}
     - target: {fileID: 173115154788271577, guid: c95671d8eb68f2a4d8e6092b93eaa4de, type: 3}
       propertyPath: m_LocalPosition.y
@@ -653,7 +653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 173115154788271577, guid: c95671d8eb68f2a4d8e6092b93eaa4de, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 8.999112
+      value: 9.11
       objectReference: {fileID: 0}
     - target: {fileID: 173115154788271577, guid: c95671d8eb68f2a4d8e6092b93eaa4de, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1892,6 +1892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _effectFallingPrefab: {fileID: 5592324186388323317, guid: 11d92b6cf84f2384fa6c662f68c9fe22, type: 3}
+  _gameOverUI: {fileID: 2131308784}
 --- !u!4 &1151077803 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3464539170958515750, guid: f00c8df389af47046baea2d14b531550, type: 3}

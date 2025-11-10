@@ -5,21 +5,18 @@ namespace ShootingRange
     public class FallEffectTrigger : MonoBehaviour
     {
         [SerializeField] private ParticleSystem _effectFallingPrefab;
+        [SerializeField] private GameObject _gameOverUI;
 
         private void OnCollisionEnter(Collision collision)
         {
-            if (collision.gameObject.CompareTag("Target"))
+            if (collision.gameObject.CompareTag("Target") || collision.gameObject.CompareTag("Bullet"))
             {
-                CreateParticle(collision);
-                var cube = collision.gameObject;
-                Destroy(cube);
-            }
+                if (!_gameOverUI.activeInHierarchy)
+                {
+                    CreateParticle(collision);
+                }
 
-            if (collision.gameObject.CompareTag("Bullet"))
-            {
-                CreateParticle(collision);
-                var bullet = collision.gameObject;
-                Destroy(bullet);
+                Destroy(collision.gameObject);
             }
         }
 
