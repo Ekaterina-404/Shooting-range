@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using UnityEngine.Assertions;
-using UnityEngine.UIElements;
 
 namespace ShootingRange
 {
@@ -11,7 +10,7 @@ namespace ShootingRange
         [Header("Values")]
         [SerializeField] private float _force = 3000f;
         [SerializeField] private float _distance = 6f;
-        
+
         [Header("References")]
         [SerializeField] private Bullet _bulletPrefab;
         [SerializeField] private MaterialProvider _materialProvider;

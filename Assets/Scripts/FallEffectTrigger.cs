@@ -15,7 +15,6 @@ namespace ShootingRange
                 {
                     CreateParticle(collision);
                 }
-
                 Destroy(collision.gameObject);
             }
         }
