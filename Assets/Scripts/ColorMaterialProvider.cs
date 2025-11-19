@@ -6,22 +6,29 @@ namespace ShootingRange
 {
     public class ColorMaterialProvider : MonoBehaviour
     {
-        [SerializeField] private GameObject _prefab;//для проверки работы MaterialPropertyBlock
-
         private Color[] _colors =
             { Color.red, Color.blue, Color.green, Color.white, Color.yellow, Color.magenta, Color.grey };
+        [SerializeField] private GameObject[] _cubes;
         private Random _random;
+        private MaterialPropertyBlock _block;
 
         public void Start()
         {
             _random = new Random();
             ShuffleArray(_colors);
-            var cube = Instantiate(_prefab); //для проверки
-            MaterialPropertyBlock block = new MaterialPropertyBlock();
-            block.SetColor("_Color",Color.blue);
-            cube.GetComponent<MeshRenderer>().SetPropertyBlock(block);
+            _block = new MaterialPropertyBlock();
+            SetColorCube(_cubes);
         }
 
+        private void SetColorCube(GameObject[] cubes)
+        {
+            for (int i = 0; i < cubes.Length; i++)
+            {
+                var mesh = _cubes[i].GetComponent<MeshRenderer>();
+                _block.SetColor("_BaseColor", _colors[i]);
+                mesh.SetPropertyBlock(_block);
+            }
+        }
 
         private void ShuffleArray(Color[] colors)
         {
@@ -33,14 +40,5 @@ namespace ShootingRange
                 colors[randomNumber] = temp;
             }
         }
-        /*private void SetColorCube(GameObject[] cubes)
-        {
-            for (int i = 0; i < cubes.Length; i++)
-            {
-                var mesh = _cubes[i].GetComponent<MeshRenderer>();
-                _block.SetColor(_color, _colors[i]);
-                mesh.SetPropertyBlock(_block);
-            }
-        }*/
     }
 }
