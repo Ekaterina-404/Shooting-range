@@ -592,6 +592,7 @@ Transform:
   - {fileID: 705341673}
   - {fileID: 1347325996}
   - {fileID: 1991389840}
+  - {fileID: 1138994651}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -906,7 +907,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3464539170958515750, guid: f00c8df389af47046baea2d14b531550, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3464539170958515750, guid: f00c8df389af47046baea2d14b531550, type: 3}
       propertyPath: m_LocalScale.x
@@ -1515,7 +1516,7 @@ Transform:
   - {fileID: 1066850667}
   - {fileID: 388579961}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &910015070
 GameObject:
@@ -1872,7 +1873,7 @@ Terrain:
   m_TreeMaximumFullLODCount: 50
   m_DetailObjectDistance: 80
   m_DetailObjectDensity: 1
-  m_HeightmapPixelError: 17
+  m_HeightmapPixelError: 100
   m_SplatMapDistance: 1056
   m_HeightmapMaximumLOD: 0
   m_ShadowCastingMode: 2
@@ -1906,8 +1907,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 395792830}
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1138994652
 MonoBehaviour:
@@ -2203,7 +2204,7 @@ GameObject:
   m_Layer: 0
   m_Name: Collider
   m_TagString: Environment
-  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -12516,10 +12517,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a7b67798007d674ebbbfb31073c2322, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameOverUI: {fileID: 2131308784}
-  _environment: {fileID: 395792829}
+  _environment:
+  - {fileID: 705341672}
+  - {fileID: 1347325992}
+  - {fileID: 1991389837}
+  - {fileID: 1138994648}
   _ammunition: {fileID: 1529411988}
-  _background: {fileID: 1138994648}
+  _gameOverUI: {fileID: 2131308784}
   _audio: {fileID: 2131308789}
   _buttonRestart: {fileID: 1154164673}
 --- !u!82 &2131308789
