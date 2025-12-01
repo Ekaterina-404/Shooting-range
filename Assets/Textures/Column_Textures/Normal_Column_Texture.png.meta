@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 55256eed1948fc742bdc1a570cecd1df
+guid: 3b5bd7bed5632fb4ea199f95c6f99f83
 labels:
 - ancientruins
 - architecture
@@ -20,7 +20,7 @@ labels:
 - roman
 - ruins
 - stone
-timeCreated: 1501344087
+timeCreated: 1501343562
 licenseType: Store
 TextureImporter:
   fileIDToRecycleName: {}

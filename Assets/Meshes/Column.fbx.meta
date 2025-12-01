@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-guid: 673ee49782a080f4c8ea098706b4fbd6
+guid: a602cd80ee0c97048b34583414a5171f
 labels:
 - classic
 - columns
 - roman
 - ruins
 - stone
-timeCreated: 1500766608
+timeCreated: 1501587833
 licenseType: Store
 ModelImporter:
   serializedVersion: 19
@@ -15,7 +15,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: ClassicColumnA_LOD 0
+    4300000: ClassicColumnBrokenA_LOD0
   materials:
     importMaterials: 0
     materialName: 0
@@ -45,7 +45,7 @@ ModelImporter:
     addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0

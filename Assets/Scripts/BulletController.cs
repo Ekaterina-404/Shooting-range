@@ -8,7 +8,6 @@ namespace ShootingRange
     public class BulletController : MonoBehaviour
     {
         [Header("Values")]
-        //[SerializeField] private float _force = 3000f;
         [SerializeField] private float _distance = 6f;
 
         [Header("References")]
@@ -26,7 +25,6 @@ namespace ShootingRange
         {
             _camera = Camera.main;
             Assert.IsNotNull(_camera);
-            // //_direction = _camera.transform.forward * _force;
             CreateSphere();
         }
 

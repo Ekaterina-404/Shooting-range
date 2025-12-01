@@ -1,15 +1,8 @@
 fileFormatVersion: 2
-guid: 417f4578b54f3e047aa0b5df3d7a4023
-labels:
-- classic
-- columns
-- materials
-- roman
-- ruins
-- stone
-timeCreated: 1501351564
-licenseType: Store
+guid: ca3cf9ffb8c47284c8a17ce244760d61
 NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
   userData: 
-  assetBundleName: materials
+  assetBundleName: 
   assetBundleVariant: 

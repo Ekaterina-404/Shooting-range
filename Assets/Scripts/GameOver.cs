@@ -19,17 +19,13 @@ namespace ShootingRange
             _audio.Play();
         }
 
-        private void DisableEnvironment() // необходимость параметров в методе
+        private void DisableEnvironment() 
         {
             foreach (var DecorElement in _environment)
             {
                 if (!DecorElement.CompareTag("Finish"))
                 {
                     DecorElement.SetActive(false);
-                }
-                else
-                {
-                    DecorElement.GetComponent<Terrain>().enabled = false;
                 }
             }
         }

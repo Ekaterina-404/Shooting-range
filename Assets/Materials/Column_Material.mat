@@ -32,7 +32,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 55256eed1948fc742bdc1a570cecd1df, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3b5bd7bed5632fb4ea199f95c6f99f83, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -60,7 +60,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: 2a38ee9635139de4ba83770f6bfe09c1, type: 3}
+        m_Texture: {fileID: 2800000, guid: f0cf5db985e143d4f8a6b11515615e7b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
@@ -68,7 +68,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
-        m_Texture: {fileID: 2800000, guid: 68ed678b5fd467947805ae034ba49b85, type: 3}
+        m_Texture: {fileID: 2800000, guid: e2791534b7d617944890a2bbeb0ea018, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -118,12 +118,12 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - _BaseColor: {r: 0.28627452, g: 0.14509805, b: 0.121568635, a: 1}
-    - _Color: {r: 0.28627452, g: 0.14509805, b: 0.121568635, a: 1}
+    - _BaseColor: {r: 0.681, g: 0.47198206, b: 0.23449527, a: 1}
+    - _Color: {r: 0.681, g: 0.47198206, b: 0.23449527, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999997, g: 0.19999997, b: 0.19999997, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &5812276919148580565
+--- !u!114 &2950507836997773985
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

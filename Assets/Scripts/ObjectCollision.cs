@@ -4,7 +4,7 @@ namespace ShootingRange
 {
     public class ObjectCollision : MonoBehaviour
     {
-        private void OnCollisionEnter(Collision collision)
+        private void OnCollisionExit(Collision collision)
         {
             if (collision.gameObject.CompareTag("Finish"))
             {
