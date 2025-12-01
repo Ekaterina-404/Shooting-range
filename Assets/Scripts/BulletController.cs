@@ -1,31 +1,32 @@
-﻿using UnityEngine;
+﻿using System.Timers;
+
+using UnityEngine;
 using UnityEngine.Assertions;
 
 namespace ShootingRange
 {
     public class BulletController : MonoBehaviour
     {
-        [SerializeField] private GameObject _gameOverUI;
-
         [Header("Values")]
-        [SerializeField] private float _force = 3000f;
+        //[SerializeField] private float _force = 3000f;
         [SerializeField] private float _distance = 6f;
 
         [Header("References")]
         [SerializeField] private Bullet _bulletPrefab;
         [SerializeField] private MaterialProvider _materialProvider;
         [SerializeField] private AmmoTracker _ammoTracker;
+        [SerializeField] private GameObject _gameOverUI;
 
         private Camera _camera;
         private Bullet _currentBullet;
-        private Vector3 _direction;
         private Transform _target;
+
 
         private void Start()
         {
             _camera = Camera.main;
             Assert.IsNotNull(_camera);
-            _direction = _camera.transform.forward * _force;
+            // //_direction = _camera.transform.forward * _force;
             CreateSphere();
         }
 
@@ -34,12 +35,13 @@ namespace ShootingRange
             if (!_gameOverUI.activeInHierarchy)
             {
                 FixItToMouse(_currentBullet);
+                _currentBullet.gameObject.SetActive(true);
 
                 if (Input.GetMouseButtonUp(0) && _ammoTracker.AmmoBullet > 0)
                 {
                     _currentBullet.SetGravity(true);
                     _currentBullet.SetTrail(true);
-                    _currentBullet.Fire(_direction);
+                    _currentBullet.Fire(_camera);
                     CreateSphere();
                 }
             }
@@ -53,6 +55,7 @@ namespace ShootingRange
         private void CreateSphere()
         {
             _currentBullet = Instantiate(_bulletPrefab);
+            _currentBullet.gameObject.SetActive(false);
             SetRandomMaterialBullet(_currentBullet);
         }
 

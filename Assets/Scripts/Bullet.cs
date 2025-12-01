@@ -1,3 +1,5 @@
+using System;
+
 using UnityEngine;
 
 namespace ShootingRange
@@ -9,10 +11,16 @@ namespace ShootingRange
         [SerializeField] private Vector3 _scale;
         [SerializeField] private MeshRenderer _meshRenderer;
         [SerializeField] private TrailRenderer _trailRenderer;
-
         [SerializeField] private ParticleSystem _piecesEffect;
 
+        [SerializeField] private float _force = 2000f;
         private bool _canPlayParticles = true;
+
+        private Vector3 _direction;
+        private Vector3 _rotation;
+        private Transform _target;
+        private float _vInput;
+        private float _hInput;
 
         private void OnCollisionEnter(Collision collision)
         {
@@ -28,16 +36,38 @@ namespace ShootingRange
             }
         }
 
-        public void Fire(Vector3 direction)
+        public void Fire(Camera camera)
+            
         {
             _rigidbody.freezeRotation = false;
-            Quaternion rotation = Quaternion.LookRotation(direction, Vector3.up);
-            _transform.rotation = rotation;
+            _hInput = Input.GetAxis("Mouse X");
+            _vInput = Input.GetAxis("Mouse Y");
+            transform.Rotate(_hInput, 0, _vInput);
+            var xPosition = transform.position.x;
+            _direction = camera.transform.forward * _force;
 
-            _rigidbody.AddForce(direction);
+            if (-3f > xPosition)
+            {
+                _direction += Vector3.left * 800f;
+            }
+            else if (-3f <= xPosition && xPosition <= -2f)
+            {
+                _direction += Vector3.left * 300f;
+            }
+            else if (0.42f <= xPosition && xPosition <= 1.6f)
+            {
+                _direction += Vector3.right * 300f;
+            }
+            else if (1.6f < xPosition)
+            {
+                _direction += Vector3.right * 800f;
+            }
+
+            _rigidbody.AddForce(_direction);
+
             Destroy(gameObject, 2f);
         }
-        
+
         public void SetGravity(bool gravityEnabled)
         {
             _rigidbody.useGravity = gravityEnabled;
