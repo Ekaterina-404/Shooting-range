@@ -5,7 +5,7 @@ namespace ShootingRange
 {
     public class GameOver : MonoBehaviour
     {
-        [SerializeField] private GameObject[] _environment;
+        [SerializeField] private GameObject _environment;
         [SerializeField] private GameObject _ammunition;
         [SerializeField] private GameObject _gameOverUI;
         [SerializeField] private AudioSource _audio;
@@ -13,21 +13,10 @@ namespace ShootingRange
 
         public void EndTheGame()
         {
-            DisableEnvironment();
+            _environment.SetActive(false);
             _ammunition.SetActive(false);
             _gameOverUI.SetActive(true);
             _audio.Play();
-        }
-
-        private void DisableEnvironment() 
-        {
-            foreach (var DecorElement in _environment)
-            {
-                if (!DecorElement.CompareTag("Finish"))
-                {
-                    DecorElement.SetActive(false);
-                }
-            }
         }
     }
 }

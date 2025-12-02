@@ -37,13 +37,14 @@ namespace ShootingRange
         }
 
         public void Fire(Camera camera)
-            
+
         {
             _rigidbody.freezeRotation = false;
             _hInput = Input.GetAxis("Mouse X");
             _vInput = Input.GetAxis("Mouse Y");
             transform.Rotate(_hInput, 0, _vInput);
             var xPosition = transform.position.x;
+            
             _direction = camera.transform.forward * _force;
 
             if (-3f > xPosition)

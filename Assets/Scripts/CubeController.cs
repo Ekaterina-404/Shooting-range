@@ -7,7 +7,6 @@ namespace ShootingRange
     public class CubeController : MonoBehaviour
     {
         [SerializeField] private GameFinishTrigger _gameFinishTrigger;
-        [SerializeField] private GameObject _gameArea;
 
         private int _countCube;
         private Rigidbody _rigidbodyCube;
@@ -23,7 +22,6 @@ namespace ShootingRange
 
                 if (_countCube == 6)
                 {
-                    _gameArea.gameObject.SetActive(true);
                     Debug.Log("Кубы на месте!");
                 }
             }
