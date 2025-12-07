@@ -1,5 +1,7 @@
 using System;
 
+using Unity.VisualScripting;
+
 using UnityEngine;
 
 namespace ShootingRange
@@ -14,20 +16,17 @@ namespace ShootingRange
         [SerializeField] private ParticleSystem _piecesEffect;
 
         [SerializeField] private float _force = 2000f;
-        private bool _canPlayParticles = true;
 
         private Vector3 _direction;
         private Vector3 _rotation;
         private Transform _target;
-        private float _vInput;
-        private float _hInput;
 
         private void OnCollisionEnter(Collision collision)
         {
-            if (collision.gameObject.CompareTag("Target") && _canPlayParticles)
+            if (collision.gameObject.CompareTag("Target"))
             {
+                _piecesEffect.gameObject.SetActive(true);
                 _piecesEffect.Play();
-                _canPlayParticles = false;
             }
 
             if (collision.gameObject.CompareTag("Finish"))
@@ -37,44 +36,28 @@ namespace ShootingRange
         }
 
         public void Fire(Camera camera)
-
         {
             _rigidbody.freezeRotation = false;
-            _hInput = Input.GetAxis("Mouse X");
-            _vInput = Input.GetAxis("Mouse Y");
-            transform.Rotate(_hInput, 0, _vInput);
-            var xPosition = transform.position.x;
-            
-            _direction = camera.transform.forward * _force;
-
-            if (-3f > xPosition)
-            {
-                _direction += Vector3.left * 800f;
-            }
-            else if (-3f <= xPosition && xPosition <= -2f)
-            {
-                _direction += Vector3.left * 300f;
-            }
-            else if (0.42f <= xPosition && xPosition <= 1.6f)
-            {
-                _direction += Vector3.right * 300f;
-            }
-            else if (1.6f < xPosition)
-            {
-                _direction += Vector3.right * 800f;
-            }
-
+            _direction = GetDirection(camera.transform);
             _rigidbody.AddForce(_direction);
-
             Destroy(gameObject, 2f);
         }
 
-        public void SetGravity(bool gravityEnabled)
+        private Vector3 GetDirection(Transform mainPoint)
+        {
+            var distanceX = transform.position.x - mainPoint.transform.position.x;
+            Quaternion rotation = Quaternion.Euler(0, distanceX * 20f, 0);
+            transform.rotation = rotation;
+            var direction = transform.forward * _force;
+            return direction;
+        }
+
+        public void EnableGravity(bool gravityEnabled)
         {
             _rigidbody.useGravity = gravityEnabled;
         }
 
-        public void SetTrail(bool trailEnabled)
+        public void EnableTrail(bool trailEnabled)
         {
             _trailRenderer.enabled = trailEnabled;
         }

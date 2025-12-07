@@ -154,6 +154,7 @@ MonoBehaviour:
   _meshRenderer: {fileID: 1615127972897943574}
   _trailRenderer: {fileID: 489584303866175498}
   _piecesEffect: {fileID: 2948677222578490466}
+  _force: 3000
 --- !u!96 &489584303866175498
 TrailRenderer:
   serializedVersion: 3
@@ -284,7 +285,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7682123088339848308
 Transform:
   m_ObjectHideFlags: 0

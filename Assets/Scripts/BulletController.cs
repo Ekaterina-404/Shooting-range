@@ -20,7 +20,6 @@ namespace ShootingRange
         private Bullet _currentBullet;
         private Transform _target;
 
-
         private void Start()
         {
             _camera = Camera.main;
@@ -37,8 +36,8 @@ namespace ShootingRange
 
                 if (Input.GetMouseButtonUp(0) && _ammoTracker.AmmoBullet > 0)
                 {
-                    _currentBullet.SetGravity(true);
-                    _currentBullet.SetTrail(true);
+                    _currentBullet.EnableGravity(true);
+                    _currentBullet.EnableTrail(true);
                     _currentBullet.Fire(_camera);
                     CreateSphere();
                 }
