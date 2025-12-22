@@ -821,6 +821,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube 6
       objectReference: {fileID: 0}
+    - target: {fileID: 8748796362607407641, guid: c95671d8eb68f2a4d8e6092b93eaa4de, type: 3}
+      propertyPath: m_Drag
+      value: 0.12
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
     m_RemovedGameObjects: []
@@ -1242,7 +1246,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705341672}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -8.91, z: 9.1}
+  m_LocalPosition: {x: 0, y: -9.52, z: 9.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

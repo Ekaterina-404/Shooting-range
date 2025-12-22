@@ -20,6 +20,12 @@ namespace ShootingRange
                 _rigidbodyCube.mass = 2;
                 _countCube += 1;
 
+                if (cube.name == "Cube 6")
+                {
+                    _rigidbodyCube.drag = 0;
+                    Debug.Log("Drag = 0");
+                }
+
                 if (_countCube == 6)
                 {
                     Debug.Log("Кубы на месте!");
