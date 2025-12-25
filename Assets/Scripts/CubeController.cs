@@ -23,7 +23,6 @@ namespace ShootingRange
                 if (cube.name == "Cube 6")
                 {
                     _rigidbodyCube.drag = 0;
-                    Debug.Log("Drag = 0");
                 }
 
                 if (_countCube == 6)
